@@ -1,0 +1,63 @@
+﻿body {
+    padding:0px;
+    margin-left: 10px;
+    border:0px;
+}
+
+/*stylesheet for ID*/
+#header {
+    color:white;
+    background-color:black;
+    border:double;
+    border-color:white;
+}
+
+/*stylesheet for class*/
+.header {
+    color:orange;
+    text-transform:uppercase;
+}
+
+.text-paragraph {
+    font-family:'Lucida Sans';
+    font-size:18px;
+    font-style:oblique;
+    color:green;
+}
+
+#west, #center,#east{
+    float:left; 
+    
+    font-size: 30px;
+    text-align:center;
+    height:200px;
+}
+
+#north,#south{
+    background-color:lightcyan;
+    clear:both;
+}
+#south{
+    background-color:lightgreen;
+}
+#west,#east{
+    width:200px;
+    background-color:lightpink;
+}
+#center{
+    width:600px;
+    background-color:lightblue;
+}
+.container{
+    margin:auto;
+    width:1000px;
+}
+
+.row{
+    height:40px;
+}
+
+.col1{
+    float:left;
+    width:200px;
+}

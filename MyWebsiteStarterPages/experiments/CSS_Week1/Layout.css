@@ -1,0 +1,81 @@
+﻿body{
+    background-color:#edf0f5;
+    margin:0;
+    padding:0;
+    border:0;
+}
+
+ul.master_navigation {
+    font-size: 120%;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 40px;
+    margin:0px;
+
+}
+
+ul.master_navigation li {
+    display: inline-block;
+    padding: 0 0.5%;
+}
+
+a {
+    color:#edf0f5;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    font-size: 120%;
+}
+
+a:hover {
+    color: #79bc64;
+}
+
+#MyExperiments{
+    color:#3a5795;    
+    font-size: 130%;
+}
+
+#MyExperiments:hover{
+    color: #79bc64;
+}
+.headerclass {
+    color:white;
+    height:auto;
+    height:100px;
+    align-self:center;
+    background-color:#3a5795;
+}
+
+.westclass, .mainclass, .eastclass {
+    margin-top:50px;
+    float: left;
+    text-align: left;
+    margin-left:50px;
+}
+
+.footerclass {
+    clear: both;
+    text-align: center;
+    padding: 25px;
+}
+
+
+.mainclass {    
+    margin-right: 10px;
+    text-align: left;
+}
+
+.image_class {
+    border-radius: 50px;
+    transition: all 2s;
+}
+
+.image_class:hover {
+    width: 250px;
+    height: 250px;
+}
+
+h1,p {
+    margin: 0px;
+}

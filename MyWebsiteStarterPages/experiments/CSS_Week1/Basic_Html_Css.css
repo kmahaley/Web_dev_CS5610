@@ -1,0 +1,101 @@
+﻿html,body{
+    margin:auto;
+    border:double;
+    border-color:red;
+}
+h1,h2,h3{
+    
+    color:red;
+    text-decoration: underline;
+}
+#unordered{
+    list-style-type: square;
+    background-color:greenyellow;
+    border:dotted;
+}
+
+#parag{
+    color:blue;
+    text-shadow: 5px 5px 5px #FF0000;
+}
+a:hover {
+    color: #b6ff00;
+    background-color: black;
+}
+
+ol{
+    color:antiquewhite;
+    background-color:black;
+    list-style-type: upper-roman;
+    border:groove;
+    border-color:antiquewhite;
+}
+
+#makesquare{
+    margin-right:20px;
+    margin-left:20px;
+    margin-bottom:20px;
+    width: 50px;
+    height: 50px;
+    background-color: pink;
+    transform:rotate(30deg);
+    float:left;
+   
+}
+#makecircle{
+    margin-right:20px;
+    width: 50px;
+    height: 50px;
+    border-radius:50px; 
+    background-color: red;
+    float:left;   
+}
+#makerectangle{
+    width: 70px;
+    height: 40px;
+    background-color: blue;
+    margin-right:20px;
+    float:left; 
+    text-transform:uppercase;
+    color:white;
+}
+
+#transition_square{
+   width: 100px;
+    height: 30px;
+    float:left;
+    background: lightblue;
+    color:red;
+    transition: width 2s;   
+}
+#transition_square:hover {
+    width:300px;
+    
+}
+#grad1{
+    margin-left: 20px;
+    width: 50px;
+    height:50px;
+    background: linear-gradient(green, yellow);
+    transition: transform 2s; 
+    margin-bottom:10px;
+    color:darkorange;
+    
+}
+
+#grad1:hover {
+    
+    transform:rotate(360deg)
+}
+#bordered_box {
+    margin-left:20px;
+    border: 2px double;
+    border-radius: 25px;
+    width:200px;
+    background-color:red;
+    color:yellow;
+    border-color:black;
+}
+hr{
+    clear:both;
+}

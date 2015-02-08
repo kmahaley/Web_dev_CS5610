@@ -1,0 +1,175 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>HTML_Test</title>
+    <link href="../CSS_Week1/CSS_Experiment1.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h2>Week1-HTML experiment</h2>
+        <article>
+            <h4>Please fill the form to be a member!</h4>
+        </article>
+        <form>
+            <div class="row">
+                <div class="col1">
+                    <label for="first_name">First Name</label>
+                </div>
+                <div class="col2">
+                    <input type="text" autofocus required id="first_name" name="first_name" placeholder="First Name" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="last_name">Last Name</label>
+                </div>
+                <div class="col2">
+                    <input type="text" id="last_name" name="last_name" placeholder="Last Name" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="address">Address</label>
+                </div>
+                <div class="col2">
+                    <input type="text" id="address" name="address" placeholder="451 John Wick street" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="city">City</label>
+                </div>
+                <div class="col2">
+                    <input type="text" id="city" name="city" placeholder="New York" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="state">State</label>
+                </div>
+                <div class="col2">
+                    <select name="state">
+                        <option>MA</option>
+                        <option>CA</option>
+                        <option>NY</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="zip">Zip</label>
+                </div>
+                <div class="col2">
+                    <input type="text" pattern="[0-9]{5}" maxlength="5" id="zip" name="zip" placeholder="02164" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="home_number">Home Number</label>
+                </div>
+                <div class="col2">
+                    <input type="text" pattern="[0-9]{10}" required maxlength="10" id="home_number" name="home_number" placeholder="4566677788" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label>Work Phone</label>
+                </div>
+                <div>
+                    <input type="text" pattern="[0-9]{10}" maxlength="10" id="work_number" name="work_number" placeholder="4566677788" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="email_address">Email Address</label>
+                </div>
+                <div class="col2">
+                    <input type="email" autocomplete="off" required id="email_address" name="email_address" placeholder="abc@xyz.com" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="form_date">Date</label>
+                </div>
+                <div class="col2">
+                    <input type="date" id="form_date" name="form_date" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="gender">Gender</label>
+                </div>
+                <div class="col2">
+                    <label><input type="radio" name="gender" value="male" />Male</label>
+                    <label><input type="radio" name="gender" value="female" />Female</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="time_to_call">Best time to contact</label>
+                </div>
+                <div class="col2">
+                    <label><input type="checkbox" name="time_to_call" value="morning" />Morning</label>
+                    <label><input type="checkbox" name="time_to_call" value="afternoon" />Afternoon</label>
+                    <label><input type="checkbox" name="time_to_call" value="evening" />Evening</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label>Best way to contact you</label>
+                </div>
+                <div class="col2">
+                    <label><input type="checkbox" value="phone" />Phone</label>
+                    <label><input type="checkbox" value="email" />Email</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="message">Message</label>
+                </div>
+                <div class="col2">
+                    <textarea placeholder="feedback" name="message"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label for="form_rating_range">Rating the range</label>
+                </div>
+                <div class="col2">
+                    <input type="range" min="0" max="5" id="form_rating_range" name="form_rating_range" placeholder="5" />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col1">
+                    <label>Rate the experience</label>
+                </div>
+                <div class="col2">
+                    <input type="number" min="0" max="5" id="form_rating" name="form_rating" placeholder="5" />
+                </div>
+            </div>
+            <div>
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset Form</button>
+                </div>
+            </div>
+        </form>
+    </header>
+    <hr />
+    <h4>Source Code</h4>
+    <div>
+        <a href="../../fileview/Default.aspx?~/experiments/Week1/Form.html" target="_blank">View Source</a>
+    </div>
+    <div>
+        <a href="../../fileview/Default.aspx?~/experiments/CSS_Week1/CSS_Experiment1.css" target="_blank">CSS View Source</a>
+    </div>
+    <div>
+        <a href="https://www.youtube.com/user/jannunzi" target="_blank">References</a>
+    </div>
+    <hr />
+    <footer>
+        Northeastern University &copy; Spring 2015, CS5610 Web Dev class
+    </footer>
+</body>
+</html>
+

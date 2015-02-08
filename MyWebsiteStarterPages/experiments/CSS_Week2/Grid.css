@@ -1,0 +1,207 @@
+﻿body{
+    margin:0px;
+    padding:0px;
+}
+h2{
+    position:fixed;
+    background-color:black;
+    color:white;
+    width:800px;
+}
+h4{
+    padding:50px;
+}
+a{
+    color:white;
+}
+a:hover{
+    color:yellow;
+}
+#small_menu, #menu {
+    display: none;
+    float:left;
+}
+
+@media screen and (max-width: 600px) {
+    #large_menu {
+        display: none;
+    }
+
+    #small_menu, #menu {
+        display: inline;
+    }
+
+    body {
+        background-color: red;
+    }
+
+    .row {
+        width: 400px;
+        padding-bottom: 10px;
+    }
+
+    .col1 {
+        float: left;
+        width: 66.66px;
+        color: red;
+        background-color: pink;
+    }
+
+    .col2 {
+        float: left;
+        width: 80px;
+        color: blue;
+        background-color: lightcyan;
+    }
+
+    .col3 {
+        float: left;
+        width: 100px;
+        color: red;
+        background-color: pink;
+    }
+
+    .col4 {
+        float: left;
+        width: 133.33px;
+        color: blue;
+        background-color: lightcyan;
+    }
+
+    .col5 {
+        float: left;
+        width: 200px;
+        color: red;
+        background-color: pink;
+    }
+
+    .col6 {
+        float: left;
+        width: 400px;
+        color: blue;
+        background-color: lightcyan;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    body {
+        background-color: orange;
+    }
+
+    .container {
+        margin: auto;
+        width: 600px;
+    }
+
+    .row {
+        width: 600px;
+        padding-bottom: 10px;
+    }
+
+    .col1 {
+        float: left;
+        width: 100px;
+        color: red;
+        background-color: pink;
+    }
+
+    .col2 {
+        float: left;
+        width: 120px;
+        color: blue;
+        background-color: lightcyan;
+    }
+
+    .col3 {
+        float: left;
+        width: 150px;
+        color: red;
+        background-color: pink;
+    }
+
+    .col4 {
+        float: left;
+        width: 200px;
+        color: blue;
+        background-color: lightcyan;
+    }
+
+    .col5 {
+        float: left;
+        width: 300px;
+        color: red;
+        background-color: pink;
+    }
+
+    .col6 {
+        float: left;
+        width: 600px;
+        color: blue;
+        background-color: lightcyan;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    body {
+        background-color: green;
+    }
+
+    .container {
+        margin: auto;
+        width: 800px;
+    }
+
+    .row {
+        width: 800px;
+    }
+
+    .col1 {
+        float: left;
+        width: 133.33px;
+        color: red;
+        background-color: pink;
+    }
+
+    .col2 {
+        float: left;
+        width: 160px;
+        color: blue;
+        background-color: lightcyan;
+    }
+
+    .col3 {
+        float: left;
+        width: 200px;
+        color: red;
+        background-color: pink;
+    }
+
+    .col4 {
+        float: left;
+        width: 266.66px;
+        color: blue;
+        background-color: lightcyan;
+    }
+
+    .col5 {
+        float: left;
+        width: 400px;
+        color: red;
+        background-color: pink;
+    }
+
+    .col6 {
+        float: left;
+        width: 800px;
+        color: blue;
+        background-color: lightcyan;
+    }
+}
+
+article,hr {
+    clear: both;
+}
+
+h3 {
+    margin: 0px;
+}
