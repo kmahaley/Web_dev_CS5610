@@ -1,0 +1,91 @@
+homepage
+
+
+<link rel="shortcut icon" href="../../images/kartik.jpg" type="image/jpg">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <script src="../Javascript/projecthome.js"></script>
+    <link rel="stylesheet" href="../Stylesheet/projecthome.css" />
+
+
+aiports
+
+<!--BootStrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!--jQuery-->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!--Angular Js-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+    <!--Google map api-->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=weather"></script>
+    <!--My files-->
+    <script src="../myjavascript/airports.js"></script>
+    <link rel="stylesheet" href="../mycss/airports.css" />
+
+
+flights
+
+  <!--BootStrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <!--Angular Js-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    
+    <!--Google map-->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <!--My files-->
+    <script src="../myjavascript/flights.js"></script>
+    <link rel="stylesheet" href="../mycss/airports.css" />
+
+
+routes
+
+
+
+    <!--BootStrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--Angular Js-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+    <!--My files-->
+    <script src="../myjavascript/routes.js"></script>
+    <link rel="stylesheet" href="../mycss/airports.css" />
+
+
+weather
+
+
+    <!--BootStrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--Angular Js-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+    <!--My files-->
+    <script src="../myjavascript/weather.js"></script>
+    <link rel="stylesheet" href="../mycss/airports.css" />
+
+
+

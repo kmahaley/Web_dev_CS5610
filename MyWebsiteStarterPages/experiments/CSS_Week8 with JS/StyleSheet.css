@@ -1,0 +1,46 @@
+﻿body{
+    padding:25px;
+    background-color:#e6d7d7;
+}
+
+
+.cricket{
+    width:250px;
+    
+}
+
+select{
+    width:300px;
+}
+
+#circle {
+      background: yellow;
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+}
+
+#square {
+      background: yellow;
+      width: 150px;
+      height: 150px;
+}
+
+
+#rect {
+	width: 200px;
+	height: 100px;
+	background: yellow;
+
+}
+
+#sort1, #sort2 {
+    width: 150px;
+    float: left;
+    background-color:red;
+    color:white;
+  }
+
+h3{
+    clear:both;
+}

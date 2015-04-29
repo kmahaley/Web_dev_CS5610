@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Displaying data from Airport API array</h2>
+        <div>
+
+            <input id="airporttitle" placeholder="Enter Airport IATA code" autofocus>
+            <span>
+                <button id="searchairport">Search</button>
+            </span>
+
+
+        </div>
+        <br />
+
+
+        <div class="mymaintable" name="mymaintable">
+            <div class="north">
+                <h1>Airport Name: <span id="myairportname"></span></h1>
+            </div>
+            <div class="newrow1">
+                <div class="west">Country</div>
+                <div class="west">City</div>
+                <div class="west">Airport name</div>
+                <div class="west">Action</div>
+            </div>
+            <div class="newrow1">
+                <div class="west countryName"></div>
+                <div class="west city"></div>
+                <div class="west name"></div>
+                <div class="west">
+                    <button class="getdatabutton" id="getdetailsdata">Details</button>
+                    <button class="getdatabutton" id="getmapdata">Map</button>
+                </div>
+            </div>
+            <div class="south">
+                <h1>spacing</h1>
+            </div>
+        </div>
+
+        <div class="getmapdata" name="getmapdata">
+            <h2>Location :<span class="latitude"></span> <span class="longitude"></span> </h2>
+            <div id="googlemap">
+            </div>
+        </div>
+
+        <div class="mydetailstable" name="mydetailstable">
+            <div class="north">
+                <h1>More details of <span id="myairportname"></span></h1>
+            </div>
+            <div class="newrow1">
+                <div class="west">Time Zone</div>
+                <div class="west">Local time</div>
+                <div class="west">UTC offset</div>
+                <div class="west">Action</div>
+            </div>
+            <div class="newrow1">
+                <div class="west timeZoneRegionName"></div>
+                <div class="west localTime"></div>
+                <div class="west utcOffsetHours"></div>
+                <div class="west">
+                    <button class="getdatabutton" id="getcodesdata">Codes</button>
+                </div>
+            </div>
+            <div class="south">
+                <h1>spacing</h1>
+            </div>
+        </div>
+
+        <div class="mycodestable" name="mycodestable">
+
+            <div class="north">
+                <h1>Code details related of: <span id="myairportname"></span></h1>
+            </div>
+            <div class="newrow1">
+                <div class="west">Country code</div>
+                <div class="west">City code</div>
+                <div class="west">IATA code</div>
+                <div class="west">Postal code</div>
+            </div>
+            <div class="newrow1">
+                <div class="west countryCode"></div>
+                <div class="west cityCode"></div>
+                <div class="west iata"></div>
+                <div class="west postalCode"></div>
+            </div>
+            <div class="south">
+                <h1>spacing</h1>
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+</body>
+</html>

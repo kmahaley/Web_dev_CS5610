@@ -1,0 +1,12 @@
+﻿body {
+    padding:25px;
+}
+
+.insidep{
+    color:Blue;
+    margin-top:10px;
+}
+
+.stopfloat{
+    clear:both;
+}

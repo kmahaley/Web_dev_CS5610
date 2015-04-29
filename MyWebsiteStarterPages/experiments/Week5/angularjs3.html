@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Angular JS:fetching data using AJAX</title>
+
+    <!--BootStrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--Angular Js-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+    <!--My files-->
+    <script src="../CSS_Week5 with JS/angularjs3.js"></script>
+    <link rel="stylesheet" href="../CSS_Week5 with JS/StyleSheet.css" />
+
+</head>
+<body ng-app="angularjs3">
+    <div class="container" ng-controller="controller1">
+        <div class="page-header">
+            <h1>Angular JS:Getting data from internet,, using JSONP</h1>
+
+        </div>
+        <h2>Search your movie: Enter name of the movie</h2>
+
+        <div class="input-group">
+            <span class="input-group-btn">
+                <button ng-click="searchmovie()" class="btn btn-warning"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+            <input ng-model="movietitle" class="form-control" placeholder="Search for movie here...">
+        </div>
+        <br />
+
+        <table class="table table-hover">
+            <tr>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Rating</th>
+                <th>Rated</th>
+                <th>Plot</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+            </tr>
+            <tr>
+                <th><input ng-model="newteam.title" class="form-control" /></th>
+                <th><input ng-model="newteam.year" class="form-control" /></th>
+                <th><input ng-model="newteam.rating" class="form-control" /></th>
+                <th><input ng-model="newteam.rated" class="form-control" /></th>
+                <th><input ng-model="newteam.plot" class="form-control" /></th>
+                <th><button ng-click="addteam()" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></button></th>
+                <th><button ng-click="updatedb()" class="btn btn-success"><span class="glyphicon glyphicon-upload"></span></button></th>
+                <th><button ng-click="clear()" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span></button></th>
+            </tr>
+            <tbody>
+                <tr ng-repeat="m in movies">
+                    <td>
+                        <b>{{m.title}}</b><br />
+                        <img class="thumbnail" ng-src="{{m.urlPoster}}" />
+                    </td>
+                    <td>{{m.year}}</td>
+                    <td>{{m.rating}}</td>
+                    <td>{{m.rated}}</td>
+                    <td>{{m.plot}} </td>
+                    <td><button ng-click="removeteam(m)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+                    <td><button ng-click="editteam(m)" class="btn btn-default"><span class="glyphicon glyphicon-pencil"></span></button></td>
+                    <td><button ng-click="starteam(m)" class="btn btn-info"><span class="glyphicon glyphicon-tag"></span></button></td>
+                </tr>
+            </tbody>
+
+        </table>
+        <hr />
+
+        <h3>My favorite bookmarked movies</h3>
+        <table class="table table-striped">
+
+            <tr>
+                <th>Title</th>
+                <th>Year</th>
+                <th>Rating</th>
+                <th>Rated</th>
+                <th>Plot</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+            </tr>
+            
+            <tbody>
+                <tr ng-repeat="m in myfavmovies">
+                    <td>
+                        <b>{{m.title}}</b><br />
+                        <img class="thumbnail" ng-src="{{m.urlPoster}}" />
+                    </td>
+                    <td>{{m.year}}</td>
+                    <td>{{m.rating}}</td>
+                    <td>{{m.rated}}</td>
+                    <td>{{m.plot}} </td>
+                    <td><button ng-click="removemyfavteam(m)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+
+                </tr>
+            </tbody>
+        </table>
+
+
+        <hr />
+        <h4>Source Code</h4>
+        <div>
+            <a href="../../fileview/Default.aspx?~/experiments/Week5/angularjs3.html" target="_blank">View Source</a>
+        </div>
+        <div>
+            <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week5 with JS/StyleSheet.css" target="_blank">CSS View Source</a>
+        </div>
+        <div>
+            <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week5 with JS/angularjs3.js" target="_blank">JS View Source</a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=KCTKd5ZmXMQ" target="_blank">References</a>
+        </div>
+        <hr />
+        <footer>
+            Northeastern University &copy; Spring 2015, CS5610 Web Dev class
+        </footer>
+    </div>
+
+</body>
+</html>

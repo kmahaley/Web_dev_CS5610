@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+
+</head>
+<body ng-app="weather">
+    <div ng-controller="weathercontroller">
+        <h2>Displaying data from Weather API array</h2>
+        <div class="input-group">
+
+            <input ng-model="airporttitle" class="form-control" placeholder="Enter Airport IATA code">
+            <span class="input-group-btn">
+                <button ng-click="getweather()" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+        </div>
+        <br />
+
+        <table ng-show="myairport" class="table table-striped">
+            <tr>
+                <th>Airport</th>
+                <th>temperature in C</th>
+                <th>Wind</th>
+                <th>Visibility</th>
+                <th>pressureInchesHg</th>
+                <th>dewPointCelsius</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul ng-repeat="m in myairport">
+                        <li>{{m.countryName}}</li>
+                        <li>{{m.stateCode}}</li>
+                        <li>{{m.city}}</li>
+                        <li>{{m.name}}</li>
+                        <li>{{m.weatherZone}}</li>
+                    </ul>
+                </td>
+                <td>{{temp}}</td>
+                <td>{{wind_dir}}, {{wind_speed}}, {{wind_variable}}</td>
+                <td>{{miles}},{{lessthan}},{{cavok}}</td>
+                <td>{{pressure}}</td>
+                <td>{{dewpoint}}</td>
+            </tr>
+        </table>
+
+
+        
+    </div>
+</body>
+</html>

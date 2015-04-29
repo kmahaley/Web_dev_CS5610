@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Airport</title>
+
+
+    <!--My files-->
+    <script src="jsfiles/airport.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Get details about Airport</h2>
+        <small>Know your city aviation hub </small>
+        <div>
+            
+            <input id="airporttitle" placeholder="Airport IATA code(eg. bos, lax) and hit Enter" autofocus>
+            <span>
+                <button id="searchairport">Search</button>
+            </span>
+
+
+        </div>
+        <br />
+
+        <h2 id="waitingclass">Wait for details to be populated</h2>
+
+        <div class="mymaintable" name="mymaintable">
+            <div class="north">
+                <h2>Airport Name: <small><span class="myairportname"></span></small></h2>
+            </div>
+            <div class="newrow1">
+                <div class="west colorchange"><strong>Country</strong></div>
+                <div class="west colorchange"><strong>City</strong></div>
+                <div class="west colorchange"><strong>Airport name</strong></div>
+                <div class="west colorchange"><strong>Action</strong></div>
+            </div>
+            <div class="newrow1">
+                <div class="west countryName"></div>
+                <div class="west city"></div>
+                <div class="west name"></div>
+                <div class="west">
+                    <button class="getdatabutton" id="getdetailsdata">Details</button>
+                    <button class="getdatabutton" id="getmapdata">My Map</button>
+                </div>
+            </div>
+            <div class="south">
+
+            </div>
+        </div>
+
+        <div class="getmapdata" name="getmapdata">
+            <div class="north">
+                <h2>Location : <small>Latitude <span class="latitude"></span> Longitude <span class="longitude"></span></small> </h2>
+            </div>
+            <div id="googlemap">
+            </div>
+        </div>
+
+        <div class="mydetailstable" name="mydetailstable">
+            <div class="north">
+                <h2>Time details of <small><span class="myairportname"></span></small></h2>
+            </div>
+            <div class="newrow1">
+                <div class="west colorchange"><strong>Time Zone</strong></div>
+                <div class="west colorchange"><strong>Local time</strong></div>
+                <div class="west colorchange"><strong>UTC offset</strong></div>
+                <div class="west colorchange"><strong>Action</strong></div>
+            </div>
+            <div class="newrow1">
+                <div class="west timeZoneRegionName"></div>
+                <div class="west localTime"></div>
+                <div class="west utcOffsetHours"></div>
+                <div class="west">
+                    <button class="getdatabutton" id="getcodesdata">Codes</button>
+                </div>
+            </div>
+            <div class="south">
+
+            </div>
+        </div>
+
+        <div class="mycodestable" name="mycodestable">
+
+            <div class="north">
+                <h2>Codes of <small><span class="myairportname"></span></small></h2>
+            </div>
+            <div class="newrow1">
+                <div class="west colorchange"><strong>Country code</strong></div>
+                <div class="west colorchange"><strong>City code</strong></div>
+                <div class="west colorchange"><strong>IATA code</strong></div>
+                <div class="west colorchange"><strong>Postal code</strong></div>
+            </div>
+            <div class="newrow1">
+                <div class="west countryCode"></div>
+                <div class="west cityCode"></div>
+                <div class="west iata"></div>
+                <div class="west postalCode"></div>
+            </div>
+            <div class="south">
+
+            </div>
+
+
+
+        </div>
+
+        <br /><br />
+        <div class="displaymycomments">
+            <table id="commentstable"></table>
+            <br /><br />
+            <input id="comment" placeholder="Enter your comment" autofocus>
+            <span>
+                <button id="addcomment">Add</button>
+            </span>
+        </div>
+
+    </div>
+</body>
+</html>

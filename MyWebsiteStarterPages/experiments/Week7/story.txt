@@ -1,0 +1,6 @@
+﻿../../story/whatisnext.htm?../experiments/Week7/      What is Next?
+jquery_7_1.html									   displaying text from a file
+jquery_7_2.html									   Slide effects and animation 
+jquery_7_3.html									   Using Dimensions and chaining
+jquery_7_4.html									   Mouse Events and Traversal
+jquery_7_5.html									   Parent and child node selection

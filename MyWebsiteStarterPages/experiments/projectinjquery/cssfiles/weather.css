@@ -1,0 +1,116 @@
+﻿*{
+    margin:0px;
+    padding:0px;
+    font-family:Kartika;
+}
+#googlemap{
+    width:1000px;
+    height:500px;
+    
+}
+
+input, select
+{
+    
+    border:solid 1px #BFBDBD;
+    color: #454545;
+    height: 25px;
+    padding-left:10px;
+    width: 40%;
+    box-shadow: 2px 2px 0 #828181 inset;
+    font-family: Kartika;
+    border-radius:5px;
+}
+button
+{
+    clear:both;
+    background-color: #454545;
+    color: #cecece;
+    height: 25px;
+    width: 100px;
+    color: #cecece;
+    text-transform:uppercase;
+    box-shadow:-1px 2px #6E6B6A inset;
+    border-radius:5px;
+    border:0;
+    font-family: Kartika;
+}
+button:hover {
+  color: black;
+  background: #cecece;
+  cursor: pointer;
+  
+}
+button:focus {
+  color: #454545;
+  background: #79bc64;
+  
+}
+
+.west {
+    width:200px;
+    text-align: center;
+    height: 100px;
+    vertical-align: middle;
+    display: table-cell;
+    border-bottom:2px solid #454545;
+}
+
+.newrow1 {
+    display: table-row;
+    width:100%;
+    
+    clear: both;
+}
+
+.north, .south {
+    
+    clear: both;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.north{
+    text-align:center;
+    background-color:#cecece;
+}
+.container {
+    margin: 30px;
+    
+}
+
+#wind, #weathercond, .givenairline,.departurea,.arrivala,.srcairport,.destairport{
+    list-style:none;
+}
+
+tbody tr:nth-child(odd)  td { background-color: #eee; }
+
+.westrt {
+    width:400px;
+    text-align: center;
+    height: 100px;
+    vertical-align: middle;
+    display: table-cell;
+    border-bottom:2px solid #454545;
+}
+
+
+
+.westtd{
+    
+    width:300px;
+    text-align: center;
+    height: 100px;
+    vertical-align: middle;
+    display: table-cell;
+    border-bottom:2px solid #454545;
+}
+
+#waitingclass{
+    color:#3a5795;
+}
+
+.colorchange{
+    color:#cecece;
+    background-color:#454545;
+
+}

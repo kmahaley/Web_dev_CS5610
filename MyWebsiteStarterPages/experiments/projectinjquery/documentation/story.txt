@@ -1,0 +1,4 @@
+﻿../../../story/whatisnext.htm?../experiments/projectinjquery/documentation/   What is Next?
+docindex.html												            Report
+angularproject.html														Project in Angular
+allcodelinks.html														Complete code of the project

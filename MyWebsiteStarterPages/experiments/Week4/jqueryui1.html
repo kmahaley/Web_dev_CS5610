@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Displaying Tabs using jquery UI </title>
+
+    <!--BootStrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--jQuery-->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <!--jQuery UI-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+
+    <!--myfiles-->
+    <script src="../CSS_Week4 with JS/jqueryui1.js"></script>
+    <link rel="stylesheet" href="../CSS_Week4 with JS/StyleSheet.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h2>Tabs: Different tabs on the page displays information about the football teams</h2>
+        </div>
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">FC Barcelona</a></li>
+                <li><a href="#tabs-2">Real Madrid C.F.</a></li>
+                <li><a href="#tabs-3">Manchester United F.C.</a></li>
+                <li><a href="#tabs-4">Chelsea F.C.</a></li>
+                <li><a href="#tabs-5">Arsenal F.C.</a></li>
+            </ul>
+            <div id="tabs-1">
+                <p>Founded in 1899 by a group of Swiss, English and Catalan footballers led by Joan Gamper, the club has become a symbol of Catalan culture and Catalanism, hence the motto "Més que un club" (More than a club). Unlike many other football clubs, the supporters own and operate Barcelona. It is the second most valuable sports team in the world, worth $3.2 billion, and the world's fourth richest football club in terms of revenue, with an annual turnover of €484.6 million.[1][2] The official Barcelona anthem is the "Cant del Barça", written by Jaume Picas and Josep Maria Espinàs.</p>
+                <a href="http://en.wikipedia.org/wiki/FC_Barcelona">Click me! Barcelona</a>
+            </div>
+            <div id="tabs-2">
+                <p>Founded in 1902 as Madrid Football Club, the team has traditionally worn a white home kit since. The word Real is Spanish for Royal and was bestowed to the club by King Alfonso XIII in 1920 together with the royal crown in the emblem. The team has played its home matches in the 81,044-capacity Santiago Bernabéu Stadium in downtown Madrid since 1947. Unlike most European football clubs, Real Madrid's members (socios) have owned and operated the club since its inception.</p>
+                <a href="http://en.wikipedia.org/wiki/Real_Madrid_C.F.">Click me! Real Madrid</a>
+            </div>
+            <div id="tabs-3">
+                <p>Manchester United Football Club is an English professional football club, based in Old Trafford, Greater Manchester that plays in the Premier League. Founded as Newton Heath LYR Football Club in 1878, the club changed its name to Manchester United in 1902 and moved to Old Trafford in 1910.</p>
+                <a href="http://en.wikipedia.org/wiki/Manchester_United_F.C.">Click me! ManU</a>
+            </div>
+            <div id="tabs-4">
+                <p>Chelsea Football Club /ˈtʃɛlsiː/ are a professional football club based in Fulham, London, who play in the Premier League, the highest level of English football. Founded in 1905, the club have spent most of their history in the top tier of English football. The club's home ground is the 41,837-seat[2] Stamford Bridge stadium, where they have played since their establishment.</p>
+                <a href="http://en.wikipedia.org/wiki/Chelsea_F.C.">Click me! Chelsea</a>
+            </div>
+            <div id="tabs-5">
+                <p>Arsenal Football Club is a professional football club based in Holloway, London that plays in English football's top tier, the Premier League. One of the most successful clubs in English football, they have won 13 First Division and Premier League titles and a joint record 11 FA Cups. Arsenal has been exceptionally consistent at the top of English football: the club has accumulated the second most points in top flight matches,[2] holds the ongoing record for the longest uninterrupted period in the top flight, and would be placed first in an aggregated league of the entire 20th century.[3] Arsenal is the second side to complete an English top-flight season unbeaten (in the 2003–04 season), having to play almost twice as many matches as when Preston North End did it 115 years before.</p>
+                <a href="http://en.wikipedia.org/wiki/Manchester_United_F.C.">Click me! Arsenal F.C.</a>
+            </div>
+        </div>
+
+
+        <p>Description: Above is method of displaying relative information, in this case abou football teams. We can keep adding teams and tab based of structure of div.</p>
+        <code>$("#tabs").tabs();</code>
+        <hr />
+        <h4>Source Code</h4>
+        <div>
+            <a href="../../fileview/Default.aspx?~/experiments/Week4/jqueryui1.html" target="_blank">View Source</a>
+        </div>
+        <div>
+            <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week4 with JS/StyleSheet.css" target="_blank">CSS View Source</a>
+        </div>
+        <div>
+            <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week4 with JS/jqueryui1.js" target="_blank">JS View Source</a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=eTUstNknCrw" target="_blank">References</a>
+        </div>
+        <hr />
+        <footer>
+            Northeastern University &copy; Spring 2015, CS5610 Web Dev class
+        </footer>
+    </div>
+</body>
+</html>

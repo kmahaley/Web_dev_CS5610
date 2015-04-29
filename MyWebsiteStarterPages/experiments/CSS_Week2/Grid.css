@@ -12,10 +12,10 @@ h4{
     padding:50px;
 }
 a{
-    color:white;
+    color:red;
 }
 a:hover{
-    color:yellow;
+    color:green;
 }
 #small_menu, #menu {
     display: none;
@@ -32,7 +32,7 @@ a:hover{
     }
 
     body {
-        background-color: red;
+        background-color: beige;
     }
 
     .row {
@@ -85,7 +85,7 @@ a:hover{
 
 @media screen and (min-width: 600px) and (max-width: 800px) {
     body {
-        background-color: orange;
+        background-color: lightcyan;
     }
 
     .container {
@@ -109,7 +109,7 @@ a:hover{
         float: left;
         width: 120px;
         color: blue;
-        background-color: lightcyan;
+        background-color: lightblue;
     }
 
     .col3 {
@@ -123,7 +123,7 @@ a:hover{
         float: left;
         width: 200px;
         color: blue;
-        background-color: lightcyan;
+        background-color: lightblue;
     }
 
     .col5 {
@@ -137,13 +137,13 @@ a:hover{
         float: left;
         width: 600px;
         color: blue;
-        background-color: lightcyan;
+        background-color: lightblue;
     }
 }
 
 @media screen and (min-width: 800px) {
     body {
-        background-color: green;
+        background-color: #f2e6fa;
     }
 
     .container {

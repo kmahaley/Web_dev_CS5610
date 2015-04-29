@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Angular JS using arrays</title>
+
+    <!--BootStrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--Angular Js-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+    <!--My files-->
+    <script src="../CSS_Week5 with JS/angularjs1.js"></script>
+    <link rel="stylesheet" href="../CSS_Week5 with JS/StyleSheet.css" />
+
+</head>
+<body ng-app="angularjs1">
+    <div class="container" ng-controller="controller2">
+        <div class="page-header">
+            <h1>Angular JS using arrays</h1>
+            <h2>Data feeding from the backend ie. angular js array</h2>
+            <p>data is present in two  different arrays one is teams and other is favorite teams</p>
+        </div>
+        <h2>All the teams playing in world cup 2015</h2>
+        <table class="table table-hover">
+            <tr>
+                <th>Team</th>
+                <th>Captain</th>
+                <th>Ranking</th>
+                <th>Points</th>
+                <th>Home-Ground</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+            </tr>
+            <tr>
+                <th><input ng-model="newteam.team" class="form-control" /></th>
+                <th><input ng-model="newteam.capt" class="form-control" /></th>
+                <th><input ng-model="newteam.ranking" class="form-control" /></th>
+                <th><input ng-model="newteam.points" class="form-control" /></th>
+                <th><input ng-model="newteam.homegd" class="form-control" /></th>
+                <th>
+                <button ng-click="addteam()" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span></button>
+                </th>
+                <th><button ng-click="updatedb()" class="btn btn-success"><span class="glyphicon glyphicon-upload"></span></button></th>
+                <th><button ng-click="clear()" class="btn btn-default"><span class="glyphicon glyphicon-ok"></span></button></th>
+            </tr>
+            <tbody>
+                <tr ng-repeat="t in teams">
+                    <td>{{t.team}}</td>
+                    <td>{{t.capt}}</td>
+                    <td>{{t.ranking}}</td>
+                    <td>{{t.points}}</td>
+                    <td>{{t.homegd}}</td>
+                    <td><button ng-click="removeteam(t)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+                    <td><button ng-click="editteam(t)" class="btn btn-info"><span class="glyphicon glyphicon-pencil"></span></button></td>
+                    <td><button ng-click="starteam(t)" class="btn btn-warning"><span class="glyphicon glyphicon-tag"></span></button></td>
+                </tr>
+            </tbody>
+        
+        </table>
+
+        <div class="page-header">
+            <h2>My favorite teams playing in worldcup 2015</h2>
+        </div>
+
+        <table class="table table-striped">
+            <tr>
+                <th>Team</th>
+                <th>Captain</th>
+                <th>Ranking</th>
+                <th>Points</th>
+                <th>Home-Ground</th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
+            </tr>
+            <tbody>
+                <tr ng-repeat="t in myfavteams">
+                    <td>{{t.team}}</td>
+                    <td>{{t.capt}}</td>
+                    <td>{{t.ranking}}</td>
+                    <td>{{t.points}}</td>
+                    <td>{{t.homegd}}</td>
+                    <td><button ng-click="removemyfavteam(t)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+                    
+
+                </tr>
+            </tbody>
+        </table>
+        
+        <hr />
+        <h4>Source Code</h4>
+        <div>
+            <a href="../../fileview/Default.aspx?~/experiments/Week5/angularjs2.html" target="_blank">View Source</a>
+        </div>
+        <div>
+            <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week5 with JS/StyleSheet.css" target="_blank">CSS View Source</a>
+        </div>
+        <div>
+            <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week5 with JS/angularjs1.js" target="_blank">JS View Source</a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=KCTKd5ZmXMQ" target="_blank">References</a>
+        </div>
+        <hr />
+        <footer>
+            Northeastern University &copy; Spring 2015, CS5610 Web Dev class
+        </footer>
+    </div>
+
+</body>
+</html>

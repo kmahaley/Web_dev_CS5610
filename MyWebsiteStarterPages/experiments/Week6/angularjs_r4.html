@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Angular JS:More experiments and Routing</title>
+
+    <!--BootStrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--jQuery-->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <!--jQuery UI-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+    <!--Angular Js-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <!--Angular Js Routing-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+    <!--My files-->
+    <script src="../CSS_Week6 with JS/angularjs_r4.js"></script>
+    <link rel="stylesheet" href="../CSS_Week6 with JS/StyleSheet1.css" />
+</head>
+<body ng-app="routing1">
+    <div class="container">
+        <h1 class="page-header">Displaying various click changes using angular js</h1>
+        <h3 class="page-header">OnClick changes:</h3>
+        <nav class="{{active}}">
+
+            <!-- When a link in the menu is clicked, we set the active variable -->
+
+            <a href="#" class="home" ng-click="active='home'">Home</a>
+            <a href="#" class="projects" ng-click="active='projects'">Projects</a>
+            <a href="#" class="services" ng-click="active='services'">Services</a>
+            <a href="#" class="contact" ng-click="active='contact'">Contact</a>
+        </nav>
+
+        <p ng-hide="active">Please click a menu item</p>
+        <p ng-show="active">You chose <b>{{active}}</b></p>
+        <code>
+            ng-click="active='home'"
+        </code>
+
+        <h3 class="page-header">Add and remove data:</h3>
+        <div ng-controller="ctrl1">
+            <table class="table">
+                <tr>
+                    <th>Names</th>
+                    <th>Action</th>
+                </tr>
+                <tr ng-repeat="name in names">
+                    <td>{{name}}</td>
+                    <td><button class="btn btn-info" ng-click="removename(name)">remove</button></td>
+                </tr>
+            </table>
+
+            <input type="text" ng-model="enteredname">
+            <button class="btn btn-success" ng-click="addname(enteredname)">Add</button>
+
+
+
+        </div>
+        <hr />
+        <h4>Source Code</h4>
+        <div>
+            <a href="../../fileview/Default.aspx?~/experiments/Week6/angularjs_r4.html" target="_blank">View Source</a>
+        </div>
+        
+        <div>
+            <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week6 with JS/StyleSheet1.css" target="_blank">CSS View Source</a>
+        </div>
+        <div>
+            <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week6 with JS/angularjs_r4.js" target="_blank">JS View Source</a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=KCTKd5ZmXMQ" target="_blank">References</a>
+        </div>
+        <hr />
+        <footer>
+            Northeastern University &copy; Spring 2015, CS5610 Web Dev class
+        </footer>
+    </div>
+
+</body>
+</html>

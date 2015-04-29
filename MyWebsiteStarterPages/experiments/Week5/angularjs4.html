@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Properties of angular JS</title>
+
+    <!--BootStrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--Angular Js-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+    <!--My files-->
+    <script src="../CSS_Week5 with JS/angularjs4.js"></script>
+    <link rel="stylesheet" href="../CSS_Week5 with JS/StyleSheet.css" />
+</head>
+<body ng-app="angularjs4">
+    <div class="container" ng-controller="controller4">
+        <div class="page-header">
+            <h1>Properties of angular JS with filters and button clicks</h1>
+        </div>
+        <div class="page-header">
+            <h3>Textarea</h3>
+        </div>
+        <textarea class="form-control" ng-model="message" cols="40" rows="4" maxlength="250"></textarea><br />
+        <p>Number of characters left: <span ng-bind="left()"></span></p>
+        <p>
+            <button class="btn btn-primary" ng-click="save()">Save</button>
+            <button class="btn btn-info" ng-click="clear()">Clear</button>
+        </p>
+
+        <div class="page-header">
+            <h3>Render data from array</h3>
+        </div>
+        <ul>
+            <li ng-repeat="f in friends">
+                {{f}}
+            </li>
+        </ul>
+
+        <div class="page-header">
+            <h3>Render data from object</h3>
+        </div>
+        <ol>
+            <li ng-repeat="c in countries">
+                {{c.name}}: {{c.population}}
+            </li>
+        </ol>
+
+        <div class="page-header">
+            <h3>Calculating number of clicks</h3>
+        </div>
+        <button class="btn btn-warning , col-md-2" ng-click="count = count + 1">Click Me!</button>
+        <p class="col-md-3">{{ count }}</p>
+
+        <div class="stopfloat"></div>
+        
+
+        <div class="page-header">
+            <h3>Filters of Angular JS: uppercase, lowercase etc</h3>
+        </div>
+        <b class="col-md-4">Displaying name in uppercase and lowercase </b>
+        <input class="form-control" ng-model="lastName" placeholder="Enter your last name" />
+
+        <p class ="col-md-4">The name is <b>{{ lastName | uppercase }}</b></p>
+
+        <p class="col-md-4">The name is <b>{{ lastName | lowercase }}</b></p>
+
+        <div class="stopfloat"></div>
+
+        <b class="col-md-4">Order by filter </b>
+        <ol class="col-md-4">
+            <b>Original list</b>
+            <li ng-repeat="c in countries">
+                {{c.name}}: {{c.population}}
+            </li>
+        </ol>
+
+        <ol class="col-md-4">
+            <b>Ordered by list</b>
+            <li ng-repeat="c in countries| orderBy:'name'">
+                {{c.name}}: {{c.population}}
+            </li>
+        </ol>
+
+        <div class="stopfloat"></div>
+
+        <b class="col-md-4">Filter by name</b>
+        <input class="form-control" ng-model="test" placeholder="Enter name of the country or it's population">
+        <ul>
+            <li ng-repeat="c in countries | filter:test | orderBy:'name'">
+                {{ (c.name | uppercase) + ', ' + c.population }}
+            </li>
+        </ul>
+        
+        <hr />
+        <h4>Source Code</h4>
+        <div>
+            <a href="../../fileview/Default.aspx?~/experiments/Week5/angularjs4.html" target="_blank">View Source</a>
+        </div>
+        <div>
+            <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week5 with JS/StyleSheet.css" target="_blank">CSS View Source</a>
+        </div>
+        <div>
+            <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week5 with JS/angularjs4.js" target="_blank">JS View Source</a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=KCTKd5ZmXMQ" target="_blank">References</a>
+        </div>
+        <hr />
+        <footer>
+            Northeastern University &copy; Spring 2015, CS5610 Web Dev class
+        </footer>
+    </div>
+
+</body>
+</html>

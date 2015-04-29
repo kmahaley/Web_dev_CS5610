@@ -1,0 +1,19 @@
+﻿<h1>Myprofile page</h1>
+
+<h2>Hello {{currentuser.username}} </h2>
+<h2>{{currentuser.role}} </h2>
+
+
+<div ng-show="currentuser.role=='headmaster'">
+    <h3>Administration</h3>
+</div>
+
+<div ng-show="currentuser.role=='professor'">
+    <h3>Authored books: {{authoring}}</h3>
+    <h3>lectured on: {{lecturing}}</h3>
+</div>
+
+<div ng-show="currentuser.role=='student'">
+    <h3>Register courses: {{currentuser.registered}}</h3>
+</div>
+

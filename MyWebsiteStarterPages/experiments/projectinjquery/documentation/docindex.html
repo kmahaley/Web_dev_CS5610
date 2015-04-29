@@ -1,0 +1,247 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Project documenation</title>
+    <!--jQuery-->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="docindex.css" />
+    <script src="doc.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="leftside">
+            <h3>Hop To:</h3>
+            <ul>
+
+                <li><a href="#title">Title</a></li>
+                <li><a href="#author">Author</a></li>
+                <li><a href="#abstract">Abstract</a></li>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#requirements">Requirements</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#impl">Implementation</a></li>
+                <li><a href="#discussion">Discussion</a></li>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="#references">References</a></li>
+
+            </ul>
+
+        </div>
+        <div id="rightside">
+            <h1>Project Documentation</h1>
+            <h3>Online Airlines Status Project-SkyNet</h3>
+
+            <div class="partion" id="title">
+                <h2>TITLE</h2>
+                <h3>Online Airlines Status Project-SkyNet</h3>
+            </div>
+            <div class="partion" id="author">
+                <h2>AUTHOR</h2>
+                <h3>Kartik Mahaley</h3>
+                <p>Master's student of computer Science at Northeastern University, Boston, USA</p>
+                <small>kmahaley@ccs.neu.edu</small>
+            </div>
+            <div class="partion" id="abstract">
+                <h2>ABSTRACT</h2>
+                <p>
+                    This project is part of my academic course CS5610 under Prof.Rasala. It aims to provide all sort of information
+                    related to flights and airports. One can check flight performance and book ticket based on it. My site provides links
+                    to sites which provides cheaper deals related to holidays, airline ticketing. You can also check the airport details
+                    and its current weather condition. Googlemap API's are used to show live weather situation along with the geolocation.
+                </p>
+            </div>
+
+            <div class="partion" id="introduction">
+                <h2>INTRODUCTION AND OBJECTIVE</h2>
+                <p>To prepare a website which will have all what I have learnt in class and in doing experiments.
+                I have taken this airline project beacause it is the most real time data and crucial mode of transport in today's life.</p>
+            </div>
+            <div class="partion" id="features">
+                <h2>FEATURES</h2>
+                <p>Airports</p>
+                <small>All the codes, name and details about the airport</small>
+                <p>Flights</p>
+                <small>Delay index and flight ratings given by travelors</small>
+                <p>Weather</p>
+                <small>Weather conditons like visibility, wind temperature etc.</small>
+                <p>Google Maps</p>
+                <small>Geo location of the airports or flights</small>
+                <h2>FUTURE PLANS</h2>
+                <p>Real time location of the flights, alerts before arrival of the flight, populating all IATA code of active airports
+                instead of typing in textbox</p>
+            </div>
+            <div class="partion" id="requirements">
+                <h2>REQUIREMENTS</h2>
+                <p>All you need to access this website full functionality, is IATA code for airports or airlines</p>
+            </div>
+            <div class="partion" id="design">
+                <h2>DESIGN</h2>
+                <img src="../../../images/usecase.jpg" /><br /><br />
+                <small>Broken arrow:that page is under developement</small>
+                <p>Above mentioned usecase diagram is primitive representation of what user can do when he has the IATA code
+                for airline or airport</p>
+                <p>I have implemented singlepage design where my index page holds navigation bar and footer data. "Main"
+                section of the page populates the clicked contents of the page which clears out with every request.</p>
+            </div>
+            <div class="partion" id="impl">
+                <h2>IMPLEMENTATION</h2>
+                <p>I have used below mentioned technologies to develope this website</p>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>Javascript</li>
+                    <li>JQuery</li>
+                    <li>Ajax</li>
+                </ul>
+                <p>I have also learnt and used technologies like Angular JS, Angular Routing and Bootstrap in my experiments</p>
+            </div>
+            <div class="partion" id="discussion">
+                <div id="accordion">
+                    <h2>Home Page</h2>
+                    <div>
+                        <img class="demoimage" src="../../../images/demo1.jpg" alt="homepage" /><br /><br />
+                        <p>Home page have short summary about my feature of the website. This will also guide you get IATA code of
+                        airlines or airports.</p>
+                        <p>I have given links to top airlines in world who have won the award, 
+                        so that guest can directly book flight tickets. If they are looking for some package deals then there are couple
+                        of links to travel website too. 
+                        </p>
+                        <p>In other section I have given links to popular beach, holiday destinations</p>
+                    </div>
+                    <h3>Airport Page</h3>
+                    <div>
+                        <img class="demoimage" src="../../../images/demo2.jpg" alt="airportpage" /><br /><br />
+                        <p>This page gives details about the airport and map location of it. 
+                        User will enter IATA code to get details of the airport such as region, country, name.</p>
+                        <p>After initial search there are option of details or map. Map will give the collapsable view of the
+                        airport where guest can zoom in or out, caan move the map. He can also check the weather
+                        of the airport which is provided by google APIs</p>
+                        <p>There are two more options to get details of the airport, first will give you time related information
+                        with GMT while second will give you all the codes you will need for example postal code, city code, country
+                        code</p>
+                    </div>
+                    <h3>Flights Page</h3>
+                    <div>
+                        <img class="demoimage" src="../../../images/demo3.jpg" alt="flightspage" /><br /><br />
+                        <p>On this page you can check the ratings of the flight given by the travellers, for example you want to check
+                         delay index of the flight or cancellation percentage.</p>
+                        <p>This will also give you flight path as well as straight path. As google is yet to provide flight
+                        mode in googlemap this will simple give to source to destination polylines</p>
+                        <p>It will list out departure and arrival airport details to you.</p>
+                    </div>
+                    <h3>Weather Page</h3>
+                    <div>
+                        <img class="demoimage" src="../../../images/demo4.jpg" alt="weatherpage" /><br /><br />
+                        <p>Search based on IATA code of any airport name. Each button triggers action on page. These tables or pane
+                        are collapsable with every button click due to toggle effect on them.</p>
+                        <p>Google map API used here takes parameters from flightstats API to generate map. I have provided
+                        width and height for div which shows map</p><br />
+                        <ul>
+                            <li>Brief details about the airport's country, city and name</li>
+                            <li>My Map button gives the map with weather details using googlemap API</li>
+                            <li>Weather button generate more data about the airport's weather condition such as
+                            temperature, presure, due point etc</li>
+                            <li>Finally more button, will generate additional data about skyconditions such as sloudy or clear,
+                            wind conditions etc</li>
+                        </ul>
+                    </div>
+                    <h3>Get IATA Page</h3>
+                    <div>
+                        <img class="demoimage" src="../../../images/demo7.jpg" alt="IATA" />
+                        <p>This site provide you with details of the airport and it's code if you just remember your
+                        city of arrival or departure. Select name of the city and you will get IATA code.</p>
+                    </div>
+                    <h3>Navigation bar</h3>
+                    <div>
+                        <img class="demoimage" src="../../../images/navbar.jpg" alt="navbar" /><br /><br />
+                        <p>
+                            Navigation bar is modified such that similar features can be grouped together.
+                            Background and on hover color are kept different to enhance user navigation experience.
+                        </p>
+                        
+                    </div>
+                    <h3>Review Flight and airport experience</h3>
+                    <div>
+                        <img class="demoimage" src="../../../images/review.jpg" alt="reviews" /><br /><br />
+                        <p>
+                            Traveller can leave there feedback onto the page for airport they visited or flights in which
+                            they travelled. These comments are not stored in database so with each refresh they will erase out.
+                        </p>
+                        
+                    </div>
+                    <h3>Stylesheet</h3>
+                    <div>
+                        <img class="demoimage" src="../../../images/cssonhover.jpg" alt="stylesheets" /><br /><br />
+                        <p>
+                            Stylesheet are modified choosing contrast colo combinations. Sometimes APIs take time to load data,
+                            hence to show user that data is getting loaded onto page a message is displayed and it disappears on data
+                            load.
+                        </p>
+
+                    </div>
+                    <h3>Validations</h3>
+                    <div>
+                        <img class="demoimage" src="../../../images/validation.jpg" alt="validations" /><br /><br />
+                        <p>
+                            If user tries to enter blank data then error is thrown in form of alert saying input cannot be empty and
+                            input fields are marked in red.
+                        </p>
+
+                    </div>
+                    <h3>Check airlines and flights between airports</h3>
+                    <div>
+                        <img class="demoimage" src="../../../images/routes.jpg" alt="routes" /><br /><br />
+                        <p>
+                            After finalizing holiday destination we need a better way to travel there afterall its a vacation time.
+                            This feature enables travellers to see what airlines and what flights are offered between their holiday destinations
+                            They can always review the flight details using flight rating module.
+                        </p>
+
+                    </div>
+                    <h3>About me Page</h3>
+                    <div>
+                        <img class="demoimage" src="../../../images/demo5.jpg" alt="aboutuspage" />
+                        <p>On this page, I have briefly described myself. My education, industry experience etc</p>
+                    </div>
+                    <h3>Credits Page</h3>
+                    <div>
+                        <img class="demoimage" src="../../../images/demo6.jpg" alt="creditspage" />
+                        <p>I have given credit to people who have contributed to my project.</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="partion" id="conclusion">
+                <h2>CONCLUSION AND FURTHER SCOPE</h2>
+                <p>To implements alerts by email or message of flight arrival with the help of reminders. 
+                Another future scope is be to populate all IATA code along with the city name and user doesn't need to remember
+                or carry ticket before opening this website.</p>
+            </div>
+            <div class="partion" id="references">
+                <h2>REFERENCES</h2>
+                <p>On a personal Note, I thank Professor Jose Annunziato, and Professor Rasala for their guidance, 
+                the TA's for their support and also my fellow classmates for their encouragement. I have learnt lots in this course, 
+                and this could have not been made possible without these sources of help,</p>
+                <ul>
+                    <li><a href="http://w3schools.com/" target="_blank">W3Schools.com</a></li>
+                    <li><a href="http://net4.ccs.neu.edu/home/rasala/" target="_blank">Professor Rasala's Website</a></li>
+                    <li><a href="https://jquery.com/" target="_blank">Jquery</a></li>
+                    <li><a href="https://jqueryui.com/" target="_blank">JqeryUI</a></li>
+                    <li><a href="http://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
+                    <li><a href="http://blog.programmableweb.com/" target="_blank">Programmable Web API list</a></li>
+                    <li><a href="https://developer.flightstats.com/" target="_blank">Flightstats</a></li>
+                    <li><a href="https://docs.angularjs.org" target="_blank">AngularJS</a></li>
+
+
+                </ul>
+
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>

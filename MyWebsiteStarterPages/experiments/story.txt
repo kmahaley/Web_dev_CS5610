@@ -1,5 +1,12 @@
 ﻿../story/whatisnext.htm?../experiments/                     What is Next?
 ../story/index.htm?../experiments/Week1/	                Week1-HTML experiments
 ../story/index.htm?../experiments/Week2/	                Week2-Grid, Bootstrap and Responsive Design
-
-
+../story/index.htm?../experiments/Week3/	                Week3-jQuery and jQueryUI
+../story/index.htm?../experiments/Week4/	                Week4-jQuery and Ajax
+../story/index.htm?../experiments/Week5/	                Week5-Moving ahead with angular JS
+../story/index.htm?../experiments/Week6/	                Week6-Angular JS and Routing
+../story/index.htm?../experiments/Week7/	                Week7-JQuery
+../story/index.htm?../experiments/Week8/	                Week8-More JQuery experiments before project
+../story/index.htm?../experiments/Project1/	                Week9-Project work
+../story/index.htm?../experiments/week9/	                Week10 checking project functionality using movie jsonp
+../story/index.htm?../experiments/week9_01/	                Week11-development of responsive grid for project

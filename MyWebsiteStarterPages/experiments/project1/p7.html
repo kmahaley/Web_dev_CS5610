@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>login page</title>
+
+    <!--BootStrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!--jQuery-->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!--Angular Js-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+    <!--Google map api-->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=weather"></script>
+    <!--My files-->
+    <script src="../project1_js_css/p7.js"></script>
+    <link rel="stylesheet" href="../project1_js_css/p1.css" />
+</head>
+<body ng-app="app_p1_p7">
+    <div class="container" ng-controller="controller_p1_p7">
+        <h2>login</h2>
+        
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="username" class="col-sm-2 control-label">User Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control"  ng-model="username" placeholder="Enter User Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="password" class="col-sm-2 control-label">Password</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control" ng-model="password" placeholder="Enter Password">
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default" ng-click="submituser()" id="submituser">Sign in</button>
+                    
+                    <button type="button" class="btn btn-default" ng-click="showuser()">show</button>
+                    <button type="button" class="btn btn-default" ng-click="logoutuser()">logout</button>
+                </div>
+            </div>
+            
+        </form>
+        <h1 id=displayselected></h1>
+</div>
+</body>
+</html>

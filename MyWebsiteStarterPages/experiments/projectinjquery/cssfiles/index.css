@@ -1,0 +1,159 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Kartika;
+}
+
+#fixednavbar {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
+}
+
+#indexwrap {
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+#indexheader {
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+.indexheaderimg {
+    width: 140px;
+    height: 90px;
+    padding-right: 20px;
+    float: right;
+}
+
+#indexheader h1 sup {
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+#indexnav {
+
+    width: 96.5%;
+    float: left;
+    background-color: #cecece;
+    border-bottom: 1px solid #ccc;
+    position:fixed;
+    padding-right:10px;
+}
+
+#indexnav ul {
+    list-style: none;
+}
+
+#indexnav li {
+   float: left;
+}
+
+#indexnav li a {
+   display: block;
+   padding: 8px 15px;
+   text-decoration: none;
+   font-weight: bold;
+   color: #090A0A;
+   width:100px;
+}
+
+
+#indexnav li a:hover {
+    color: #cecece;
+    background-color: #454545;
+}
+#indexnav li a:focus{
+    color: #79bc64;
+    background-color: #454545;
+}
+
+
+
+#indexmain {
+    clear: both;
+    padding-top: 120px;
+    padding-bottom: 10px;
+    padding-right: 16px;
+}
+
+#indexfooter {
+    color: #090A0A;
+}
+
+a {
+    text-decoration: none;
+    color: #79bc64;
+}
+
+
+#indexnav ul ul {
+	display: none;
+}
+
+#indexnav ul li:hover > ul {
+    display: block;
+    
+}
+
+
+#indexnav ul li {
+	float: left;
+}
+
+#indexnav ul ul {
+	background: #79bc64; 
+    border-radius: 0px; 
+    padding: 0;
+	position: absolute; 
+    top: 100%;
+    
+}
+
+#indexnav ul ul li {
+    float: none; 
+    
+	border-bottom: 3px solid #cecece;
+	position: relative;
+    
+}
+
+#indexnav ul ul li a{
+    color:#090A0A;
+}
+#indexnav ul ul li a:hover{
+    color:#cecece;
+}
+#indexnav ul ul li a:focus{
+    color: #79bc64;
+   
+}
+
+#downarrow{
+    
+    width:15px;
+    height:15px;
+}
+
+
+@media screen and (max-width: 830px) {
+    #indexmain {
+        padding-top: 175px;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    #indexmain {
+        padding-top: 225px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    #indexmain {
+        padding-top: 275px;
+    }
+}

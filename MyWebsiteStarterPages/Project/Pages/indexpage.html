@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Connect with sky</title>
+    <link rel="shortcut icon" href="http://s3.amazonaws.com/gs.apps.icons/_QsZUut1EeK1GRIxPR901Q_%2FAirplane+Logo.png" type="image/jpg">
+    <!--BootStrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--Jquery-->
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+
+    <!--Angular Js-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <!--Angular Js Routing-->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+
+    <!--Google map api-->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=weather"></script>
+    <!--My javascript files-->
+    <script src="../Javascript/indexpage.js"></script>
+
+
+    <script src="../Javascript/projecthome.js"></script>
+    <script src="../myjavascript/airports.js"></script>
+    <script src="../myjavascript/flights.js"></script>
+    <script src="../myjavascript/weather.js"></script>
+    <script src="../myjavascript/routes.js"></script>
+
+    <!--My stylesheets-->
+    <link rel="stylesheet" href="../Stylesheet/projecthome.css" />
+    <link rel="stylesheet" href="../mycss/airports.css" />
+    <link rel="stylesheet" href="../mycss/indexpage.css" />
+    <link rel="stylesheet" href="../../experiments/projectinjquery/airport.css" />
+
+</head>
+<body ng-app="indexpage">
+    <div ng-controller="indexpagecontroller" class="container">
+
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Project name</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#Airports">Airports</a></li>
+                        <li><a href="#Flights">Flights</a></li>
+                        <li><a href="#Routes">Routes</a></li>
+                        <li><a href="#Weather">Weather</a></li>
+                        <li><a href="#About us">About us</a></li>
+
+                    </ul>
+
+                </div><!--/.nav-collapse -->
+            </div><!--/.container-fluid -->
+        </nav>
+
+
+        <div ng-view>
+        </div>
+
+
+
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2015 Northeastern University. &middot; <a href="#credits">Credits</a></p>
+        </footer>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Flight Rating array</title>
+
+    <!--BootStrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <!--Angular Js-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    
+    <!--Google map-->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    <!--My files-->
+    <script src="../project1_js_css/p2.js"></script>
+    <link rel="stylesheet" href="../project1_js_css/p1.css" />
+</head>
+<body ng-app="app_p1_p2">
+    <div class="container" ng-controller="controller_p1_p2">
+        <h2>Displaying data from Flight rating API array</h2>
+        <div class="input-group row">
+            <div class="col-md-4">
+                <input ng-model="airlinecode" class="form-control" placeholder="Airline Code eg. BA">
+            </div>
+            <div class="col-md-4">
+                <input ng-model="airlinenumber" class="form-control" placeholder="Airline number eg. 198">
+            </div>
+            <div class="col-md-4">
+                <span class="input-group-btn">
+                    <button ng-click="searchflight()" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+                </div>
+            </div>
+        <br />
+        
+        <table  class="table table-striped">
+            <tr>
+                <th>Dep_Airport</th>
+                <th>Arrival_Airport</th>
+                <th>Airline</th>
+                <th>Delay % by 15 : 30 : 45 mins</th>
+                <th>Ontime %</th>
+                <th>&nbsp;</th>
+            </tr>
+            <tr ng-repeat="r in flightrating">
+                <td>{{r.departureAirportFsCode}}</td>
+                <td>{{r.arrivalAirportFsCode}}</td>
+                <td>{{r.airlineFsCode}}{{r.flightNumber}}</td>
+                <td>{{(r.late15 / r.observations)*100}}  : {{(r.late30 / r.observations)*100}} : {{(r.late45 / r.observations)*100}}</td>
+                <td>{{(r.ontimePercent)*100}}</td>
+                <td>
+                    <button class=" btn btn-primary" ng-click="getdata(r)">Flight</button>
+                    <button class=" btn btn-primary" ng-click="getroute()">Route Map</button>
+                </td>
+
+            </tr>
+        </table>
+       
+        <h2 ng-show="detailsView">{{detailsView.allStars}}</h2>
+        <table ng-show="detailsView" class="table table-striped">
+            <tr>
+                <th>Airlines Info</th>
+                <th>Departure Airport</th>
+                <th>Arrival Airport</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul ng-repeat="m in myairline">
+                        <li>{{m.name}}</li>
+                        <li>{{m.phoneNumber}}</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>{{myairportD.countryName}}</li>
+                        <li>{{myairportD.city}}</li>
+                        <li>{{myairportD.iata}}</li>
+                        <li>{{myairportD.name}}</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>{{myairportA.countryName}}</li>
+                        <li>{{myairportA.city}}</li>
+                        <li>{{myairportA.iata}}</li>
+                        <li>{{myairportA.name}}</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+
+        <div id="googlemap" ng-show="x"></div>
+            
+
+        <hr />
+        <h4>Source Code:html,javascript and stylesheet</h4>
+        <ul>
+            <li><a href="../../fileview/Default.aspx?~/experiments/project1/p2.html" target="_blank">HTML View Source</a></li>
+            <li><a href="../../fileview/Default.aspx?~/Experiments/project1_js_css/p1.css" target="_blank">CSS View Source</a></li>
+            <li><a href="../../fileview/Default.aspx?~/Experiments/project1_js_css/p2.js" target="_blank">JS View Source</a></li>
+        </ul>
+
+        <h4>Reference Code</h4>
+        <ul>
+            <li>From my experiments</li>
+
+        </ul>
+        <hr />
+        <footer>
+            Northeastern University &copy; Spring 2015, CS5610 Web Dev class
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQeryUI save state of the browser</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+
+    
+    <!-- my files -->
+    <link rel="stylesheet" href="../CSS_Week4 with JS/StyleSheet.css" />
+    <script src="../CSS_Week4 with JS/jqueryui2.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h2>On click function handled through jquery</h2>
+        </div>
+
+        <h4> click me! to change color</h4>
+        
+        <code>
+            $("h1").click(function (event) {<br />
+            console.log("clicked")<br />
+            $("h1").css("color", "red");<br />
+            });
+        </code>
+        <p>Description: "click me! to change color" triggers jquery to write to console and change the color of the text</p>
+        
+        <div class="page-header">
+            <h2>Add and clear content from the page on click</h2>
+        </div>
+        
+        <button class="btn btn-primary" id="addcontent">Add content</button>
+        <button class="btn btn-success" id="savecontent">Save content</button>
+        <button class="btn btn-info" id="loadcontent">show content in console</button>
+        <button class="btn btn-danger" id="clearcontent">Clear</button>
+        
+        <p>Description: After click on "Add content" button new h3 tags are added one below other which is also an editable content.</p>
+        <p>"Clear" button clears all the element added to the page."Save" option saves th content created by the add content.</p>
+        <p>"Load" button loads the object representation of the content in console variable</p>
+        <p class="appendhere"></p>
+
+        <hr />
+        <h4>Source Code</h4>
+        <div>
+            <a href="../../fileview/Default.aspx?~/experiments/Week4/jqueryui2.html" target="_blank">View Source</a>
+        </div>
+        <div>
+            <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week4 with JS/StyleSheet.css" target="_blank">CSS View Source</a>
+        </div>
+        <div>
+            <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week4 with JS/jqueryui2.js" target="_blank">JS View Source</a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=eTUstNknCrw" target="_blank">References</a>
+        </div>
+        <hr />
+        <footer>
+            Northeastern University &copy; Spring 2015, CS5610 Web Dev class
+        </footer>
+    </div>
+</body>
+</html>

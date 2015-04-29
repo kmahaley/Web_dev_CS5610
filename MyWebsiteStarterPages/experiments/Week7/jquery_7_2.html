@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Jquery experiments</title>
+    <!--BootStrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!--jQuery-->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <!--jQuery UI-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+
+    <!--myfiles-->
+    <script src="../CSS_Week7 with JS/jquery_7_2.js"></script>
+    <link rel="stylesheet" href="../CSS_Week7 with JS/StyleSheet.css" />
+</head>
+<body class="container">
+    <h2 class="page-header">Animation</h2>
+    <div class="row">
+        <div class="col-md-2"><button class="btn btn-default" id="animate">Animate</button></div>
+        <div class="col-md-2"><button class="btn btn-default" id="reset">Reset</button></div>
+    </div>
+
+    <p class="try_property2">Sample text</p>
+    <div class="try_property3"></div>
+
+    <h2>Displaying DOM Properties:Text,Html and value</h2>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div class="try_property4">
+                <ol>
+                    <li>South Africa</li>
+                    <li id="text1">Australia</li>
+                    <li id="html1">India</li>
+                    <li>England</li>
+                    <li><input id="value1" type="text" value="John Carter" /></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2"><button class="btn btn-default" id="text1_change">DOM Text</button></div>
+        <div class="col-md-2"><button class="btn btn-default" id="html1_change">DOM HTML</button></div>
+        <div class="col-md-2"><button class="btn btn-default" id="value1_change">DOM value</button></div>
+        <div class="col-md-2"><button class="btn btn-default" id="empty">Empty</button></div>
+        <div class="col-md-2"><button class="btn btn-default" id="remove">Remove</button></div>
+    </div>
+
+    <br />
+    <br />
+    <code>
+        $("#empty").click(function () {<br />
+        $(".try_property4").empty();<br />
+        });
+    </code>
+    <hr />
+    <h4>Source Code</h4>
+    <div>
+        <a href="../../fileview/Default.aspx?~/experiments/Week7/jquery_7_2.html" target="_blank">View Source</a>
+    </div>
+    <div>
+        <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week7 with JS/StyleSheet.css" target="_blank">CSS View Source</a>
+    </div>
+    <div>
+        <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week7 with JS/jquery_7_2.js" target="_blank">JS View Source</a>
+    </div>
+    <div>
+        <ul>
+            <li><a href="http://www.jquerybyexample.net/2011/08/mostly-used-and-essential-jquery-code.html" target="_blank">References1</a></li>
+            <li><a href="http://www.w3schools.com/jquery/jquery_ref_effects.asp" target="_blank">List of effects</a></li>
+        </ul>
+    </div>
+    <hr />
+    <footer>
+        Northeastern University &copy; Spring 2015, CS5610 Web Dev class
+    </footer>
+</body>
+</html>

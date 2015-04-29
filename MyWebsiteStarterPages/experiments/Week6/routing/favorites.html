@@ -1,0 +1,29 @@
+﻿<h1>My favorites movies</h1>
+<table class="table table-striped">
+
+    <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Rating</th>
+        <th>Rated</th>
+        <th>Plot</th>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+    </tr>
+
+    <tbody>
+        <tr ng-repeat="m in myfavmovies">
+            <td>
+                <b>{{m.title}}</b><br />
+                <img class="thumbnail" ng-src="{{m.urlPoster}}" />
+            </td>
+            <td>{{m.year}}</td>
+            <td>{{m.rating}}</td>
+            <td>{{m.rated}}</td>
+            <td>{{m.plot}} </td>
+            <td><button ng-click="removemyfavteam(m)" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+            
+        </tr>
+    </tbody>
+</table>

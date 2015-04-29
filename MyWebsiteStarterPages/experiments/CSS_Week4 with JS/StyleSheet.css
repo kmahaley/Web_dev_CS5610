@@ -1,0 +1,15 @@
+﻿body {
+    padding:25px;
+}
+a:hover {
+    color: #FF0000;
+
+}
+a:link{
+    color:blue;
+}
+
+.mydiv{
+    padding-top:25px;
+}
+

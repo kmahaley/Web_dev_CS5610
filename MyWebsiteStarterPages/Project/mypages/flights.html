@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+  
+</head>
+<body ng-app="flights">
+    <div ng-controller="flightscontroller">
+        <h2>Displaying data from Flight rating API array</h2>
+        <div class="input-group row">
+            <div class="col-md-4">
+                <input ng-model="airlinecode" class="form-control" placeholder="Airline Code eg. BA">
+            </div>
+            <div class="col-md-4">
+                <input ng-model="airlinenumber" class="form-control" placeholder="Airline number eg. 198">
+            </div>
+            <div class="col-md-4">
+                <span class="input-group-btn">
+                    <button ng-click="searchflight()" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button>
+                </span>
+            </div>
+        </div>
+        <br />
+
+        <table ng-show="myflightrating" class="table table-striped">
+            <tr>
+                <th>Dep_Airport</th>
+                <th>Arrival_Airport</th>
+                <th>Airline</th>
+                <th>Delay % by 15 : 30 : 45 mins</th>
+                <th>Ontime %</th>
+                <th>Details</th>
+            </tr>
+            <tr ng-repeat="r in flightrating">
+                <td>{{r.departureAirportFsCode}}</td>
+                <td>{{r.arrivalAirportFsCode}}</td>
+                <td>{{r.airlineFsCode}}{{r.flightNumber}}</td>
+                <td>{{(r.late15 / r.observations)*100}}  : {{(r.late30 / r.observations)*100}} : {{(r.late45 / r.observations)*100}}</td>
+                <td>{{(r.ontimePercent)*100}}</td>
+                <td>
+                    <button class=" btn btn-primary" ng-click="getdata(r)">Flight</button>
+                    <button class=" btn btn-primary" ng-click="getroute()">Route Map</button>
+                    <button class=" btn btn-primary" ng-click="getcomments(r)">Review</button>
+                </td>
+
+            </tr>
+        </table>
+
+        <h2 ng-show="detailsView">{{detailsView.allStars}}</h2>
+        <table ng-show="detailsView" class="table table-striped">
+            <tr>
+                <th>Airlines Info</th>
+                <th>Departure Airport</th>
+                <th>Arrival Airport</th>
+            </tr>
+            <tr>
+                <td>
+                    <ul ng-repeat="m in myairline">
+                        <li>{{m.name}}</li>
+                        <li>{{m.phoneNumber}}</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>{{myairportD.countryName}}</li>
+                        <li>{{myairportD.city}}</li>
+                        <li>{{myairportD.iata}}</li>
+                        <li>{{myairportD.name}}</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>{{myairportA.countryName}}</li>
+                        <li>{{myairportA.city}}</li>
+                        <li>{{myairportA.iata}}</li>
+                        <li>{{myairportA.name}}</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <br />
+        <br />
+
+        <div id="googlemap" ng-show="x"></div>
+
+
+        <div ng-show="comments">
+            <h3>Share your experience</h3>
+
+            <table class="table table-hover">
+                <tr>
+                    <th>Experience</th>
+                    <th>Action</th>
+                </tr>
+                <tr ng-repeat="comment in comments">
+                    <td>{{comment}}</td>
+                    <td><button class="btn btn-danger" ng-click="deletecomment(comment)" disabled>remove</button></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="comment">Write your experience</label>
+                        <textarea id="comment" class="form-control" rows="5" ng-model="newcomment"></textarea>
+                    </td>
+                    <td>
+                        <button class="btn btn-success" ng-click="addcomment(newcomment)">Share</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</body>
+</html>

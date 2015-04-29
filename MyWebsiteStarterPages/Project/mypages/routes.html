@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+</head>
+<body ng-app="routes">
+    <div ng-controller="routescontroller">
+        <h2>Displaying data from Route Rating API array</h2>
+
+        <div class="input-group">
+            <div class="row">
+                <div class="col-md-4">
+                    <input ng-model="sourceairport" class="form-control" placeholder="Enter IATA source airport code">
+                </div>
+                <div class="col-md-4">
+                    <input ng-model="destinationairport" class="form-control" placeholder="Enter IATA destination airport code">
+                </div>
+                <div class="col-md-4">
+                    <span class="input-group-btn">
+                        <button ng-click="searchroute()" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <br />
+
+        <table ng-show="myairportD" class="table table-striped">
+            <tr>
+                <th>Source airport</th>
+                <th>Destination airport</th>
+
+            </tr>
+            <tr>
+                <td>
+                    <ul>
+                        <li>{{myairportD.countryName}}</li>
+                        <li>{{myairportD.countryCode}}</li>
+                        <li>{{myairportD.city}}</li>
+                        <li>{{myairportD.iata}}</li>
+                        <li>{{myairportD.name}}</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>{{myairportA.countryName}}</li>
+                        <li>{{myairportA.countryCode}}</li>
+                        <li>{{myairportA.city}}</li>
+                        <li>{{myairportA.iata}}</li>
+                        <li>{{myairportA.name}}</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <h2 ng-show="myairlines">List of all airlines traveling from {{source}} to {{destination}}</h2>
+        <table ng-show="myairlines" class="table table-striped">
+            <tr>
+                <th>AirlineCode</th>
+                <th>Airline Name</th>
+                <th>Phone Number</th>
+            </tr>
+            <tr ng-repeat="a in myairlines">
+                <td>{{a.fs}}</td>
+                <td>{{a.name}}</td>
+                <td>{{a.phoneNumber}}</td>
+            </tr>
+        </table>
+
+        <h2 ng-show="route">List of all Flights from {{source}} to {{destination}}</h2>
+        <table ng-show="route" class="table table-striped">
+            <tr>
+                <th>AirlineCode</th>
+                <th>FLight No</th>
+                <th>Ontime %</th>
+                <th>Mean delay(mins)</th>
+                <th>&nbsp;</th>
+            </tr>
+            <tr ng-repeat="r in route">
+                <td>{{r.airlineFsCode}}</td>
+                <td>{{r.flightNumber}}</td>
+                <td>{{(r.ontimePercent)*100}}</td>
+                <td>{{r.delayMean}}</td>
+
+                <td><button class=" btn btn-primary">Details</button></td>
+            </tr>
+        </table>
+
+
+        
+    </div>
+</body>
+</html>

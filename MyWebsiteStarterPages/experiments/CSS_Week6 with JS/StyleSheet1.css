@@ -1,0 +1,37 @@
+﻿body{
+    padding:25px;
+}
+
+nav.home .home,
+nav.projects .projects,
+nav.services .services,
+nav.contact .contact{
+	background-color:#e35885;
+}
+nav{
+	display:inline-block;
+	margin:10px auto;
+	background-color:#5597b4;
+	border-radius:2px;
+}
+
+nav a{
+	display:inline-block;
+	padding: 18px 30px;
+	color:#fff !important;
+	font-weight:bold;
+	font-size:16px;
+	text-decoration:none;
+	text-transform: uppercase;
+	transition:all 0.25s;
+}
+p{
+	font-size:22px;
+	font-weight:bold;
+	color:#7d9098;
+}
+
+p b{
+    background-color:#5597b4;
+    color:#fff
+}

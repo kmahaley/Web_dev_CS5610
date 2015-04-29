@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Weather</title>
+    <!--jQuery-->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <!--Google map api-->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=weather"></script>
+    <link href="weather.css" rel="stylesheet" />
+    <!--My files-->
+    <script src="weather.js"></script>
+    <script src="windowsize.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Get weather conditions of the Airport</h2>
+        <sup>plan your travel</sup>
+        <div>
+
+            <input id="weathertitle" placeholder="Enter Airport IATA code for weather report eg. bos, lax" autofocus>
+            <span>
+                <button id="searchweatherairport">search</button>
+            </span>
+
+
+        </div>
+        <br />
+
+
+        <div class="mymaintable" name="mymaintable">
+            <div class="north">
+                <h2>Airport Name: <small><span id="myweatherairportname"></span></small></h2>
+            </div>
+            <div class="newrow1">
+                <div class="west">Region</div>
+                <div class="west">Country</div>
+                <div class="west">City</div>
+                <div class="west">Airport Name</div>
+                <div class="west">Action</div>
+            </div>
+            <div class="newrow1">
+                <div class="west regionName"></div>
+                <div class="west countryName"></div>
+                <div class="west city"></div>
+                <div class="west name"></div>
+                <div class="west">
+                    <button class="getdatabutton" id="getweatherdetailsdata">Weather</button>
+                    <button class="getdatabutton" id="getweathermapdata">My Map</button>
+                </div>
+            </div>
+            <div class="south">
+
+            </div>
+        </div>
+
+        <div class="getmapdata" name="getmapdata">
+            <div class="north">
+                <h2>
+                    Location : <small>
+                        Latitude <span class="latitude">
+                        </span> Longitude <span class="longitude"></span>
+                    </small>
+                </h2>
+            </div>
+            <div id="googlemap">
+            </div>
+        </div>
+
+        <div class="mydetailstable" name="mydetailstable">
+            <div class="north">
+                <h2>Weather report time is <small><span class="reportTime"></span></small></h2>
+            </div>
+            <div class="newrow1">
+                <div class="west">Weather Station</div>
+                <div class="west">Temperature(Celcius)</div>
+                <div class="west">Pressure(In-hg)</div>
+                <div class="west">Dew Point(Celcius)</div>
+                <div class="west">Action</div>
+            </div>
+            <div class="newrow1">
+                <div class="west weatherStationIcao"></div>
+                <div class="west temperatureCelsius"></div>
+                <div class="west pressureInchesHg"></div>
+                <div class="west dewPointCelsius"></div>
+                <div class="west">
+                    <button class="getdatabutton" id="getweathercodesdata">more</button>
+                </div>
+            </div>
+            <div class="south">
+
+            </div>
+        </div>
+
+        <div class="mycodestable" name="mycodestable">
+
+            <div class="north">
+                <h2>Meter Weather Report dated <small><span class="reportTime"></span></small></h2>
+            </div>
+            <div class="newrow1">
+                <div class="west">Wind</div>
+                <div class="west">Visibility(Miles)</div>
+                <div class="west">Weather Conditions</div>
+                <div class="west">Sky Conditions</div>
+            </div>
+            <div class="newrow1">
+                <div class="west"><ul id="wind"></ul></div>
+                <div class="west visibility"></div>
+                <div class="west"><ul id="weathercond"></ul></div>
+                <div class="west skycond"></div>
+            </div>
+            <div class="south">
+            </div>
+
+        </div>
+
+
+        <div class="myexperience" name="myexperience">
+
+            <div class="north">
+                <div><label for="comment">Write your experience</label></div>
+                <div><textarea id="comment" rows="5" cols="50" ng-model="newcomment"></textarea></div>
+                <button class="getdatabutton" id="shareexperience">Share</button>
+            </div>
+            <div class="newrow1">
+                <div class="west">Wind</div>
+                <div class="west">Visibility(Miles)</div>
+                <div class="west">Weather Conditions</div>
+                <div class="west">Sky Conditions</div>
+            </div>
+            <div class="newrow1">
+                <div class="west"><ul id="wind"></ul></div>
+                <div class="west visibility"></div>
+                <div class="west"><ul id="weathercond"></ul></div>
+                <div class="west skycond"></div>
+            </div>
+            <div class="south">
+            </div>
+
+        </div>
+
+        <div class="ui-responsive" id="div1">
+            
+                </div>
+
+        
+        
+
+    </div>
+</body>
+</html>

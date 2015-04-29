@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Week8:After the break</title>
+    <!--jQuery-->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <!--jQuery UI-->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+
+    <!--myfiles-->
+    <script src="../CSS_Week8 with JS/sample_8_1.js"></script>
+    <link rel="stylesheet" href="../CSS_Week8 with JS/StyleSheet.css" />
+</head>
+<body>
+    <h2>Menu format using JqueryUI:select or focus events are triggered</h2>
+    <h3>Grounds for worldcup 2015</h3>
+    <ul class="cricket">
+        <li>
+            Wellington
+            <ul class="cricket">
+                <li>
+                    NZ vs Ind
+                    <ul class="cricket">
+                        <li>2nd march 2015</li>
+                        <li>5th march 2015</li>
+                        <li>10th march 2015</li>
+                    </ul>
+                </li>
+                <li>NZ vs South Africa</li>
+                <li>NZ vs England</li>
+            </ul>
+        </li>
+        <li>Sydney</li>
+        <li>
+            MCG
+            <ul class="cricket">
+                <li>Aus vs Ind
+                    <ul class="cricket">
+                        <li>2nd march 2015</li>
+                        <li>5th march 2015</li>
+                        <li>10th march 2015</li>
+                    </ul>
+                </li>
+                <li>Aus vs Pak</li>
+            </ul>
+        </li>
+        <li>Aukland</li>
+    </ul>
+    <pre>
+        Description: List of grounds present which matches are played on them and on which date
+    
+        $(".cricket").menu();
+        focus: function (event, ui) {
+            $("body").css("background-color", "yellow");
+            //console.log("focused");
+        },
+        To stop alert:
+        window.alert = function () { /* do nothing here */ };
+    </pre>
+    <hr />
+    <h4>Source Code:html,javascript and stylesheet</h4>
+    <ul>
+        <li><a href="../../fileview/Default.aspx?~/experiments/Week8/sample_8_1.html" target="_blank">HTML View Source</a></li>
+        <li><a href="../../fileview/Default.aspx?~/Experiments/CSS_Week8 with JS/StyleSheet.css" target="_blank">CSS View Source</a></li>
+        <li><a href="../../fileview/Default.aspx?~/Experiments/CSS_Week8 with JS/sample_8_1.js" target="_blank">JS View Source</a></li>
+    </ul>
+
+    <h4>Reference Code</h4>
+    <ul>
+        <li><a href="http://jqueryui.com/menu/#default" target="_blank">References1</a></li>
+        
+    </ul>
+    <hr />
+    <footer>
+        Northeastern University &copy; Spring 2015, CS5610 Web Dev class
+    </footer>
+</body>
+</html>

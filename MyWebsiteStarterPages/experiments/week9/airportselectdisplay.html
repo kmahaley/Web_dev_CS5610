@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>JSONP saving</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--jQuery-->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!--Angular Js-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="JavaScript4.js"></script>
+</head>
+<body class="container" ng-app="a">
+    <div ng-controller="b" >
+        <h2>Enter movie name and retrieve for later use</h2>
+        <span class="input-group-btn">
+            <input ng-model="airporttitle" class="form-control" placeholder="Movie name pls">
+            <button ng-click="getdata()" class="btn btn-primary">Get & save data</button>
+            <button ng-click="populate()" class="btn btn-success">populate data</button>
+        </span>
+        
+        <select id="airport" class="form-control"></select>
+        <button ng-click="showdata()" class="btn btn-warning">Show!</button>
+        
+        <h1 id="displayselected"></h1>
+
+
+        <hr />
+        <h4>Source Code:html,javascript and stylesheet</h4>
+        <ul>
+            <li><a href="../../fileview/Default.aspx?~/experiments/week9/airportselectdisplay.html" target="_blank">HTML View Source</a></li>
+
+            <li><a href="../../fileview/Default.aspx?~/Experiments/week9/JavaScript4.js" target="_blank">JS View Source</a></li>
+        </ul>
+
+        <h4>Reference Code</h4>
+        <ul>
+            <li>From my experiments</li>
+
+        </ul>
+        <hr />
+        <footer>
+            Northeastern University &copy; Spring 2015, CS5610 Web Dev class
+        </footer>
+    </div>
+</body>
+</html>

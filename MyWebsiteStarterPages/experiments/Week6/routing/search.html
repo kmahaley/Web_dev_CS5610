@@ -1,0 +1,38 @@
+﻿<h1>Search Movies</h1>
+{{myfavmovies}}
+<div class="input-group">
+    <span class="input-group-btn">
+        <button ng-click="searchmovie()" class="btn btn-warning"><span class="glyphicon glyphicon-search"></span></button>
+    </span>
+    <input ng-model="movietitle" class="form-control" placeholder="Search for movie here...">
+</div>
+<br />
+
+<table class="table table-hover">
+    <tr>
+        <th>Title</th>
+        <th>Year</th>
+        <th>Rating</th>
+        <th>Rated</th>
+        <th>Plot</th>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th>&nbsp;</th>
+    </tr>
+    
+    <tbody>
+        <tr ng-repeat="m in movies">
+            <td>
+                <b>{{m.title}}</b><br />
+                <img class="thumbnail" ng-src="{{m.urlPoster}}" />
+            </td>
+            <td>{{m.year}}</td>
+            <td>{{m.rating}}</td>
+            <td>{{m.rated}}</td>
+            <td>{{m.plot}} </td>
+            
+            <td><button ng-click="starteam(m)" class="btn btn-info"><span class="glyphicon glyphicon-tag"></span></button></td>
+        </tr>
+    </tbody>
+
+</table>

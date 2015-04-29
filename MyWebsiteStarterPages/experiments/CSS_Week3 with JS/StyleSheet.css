@@ -1,0 +1,97 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
+.container {
+    padding: 50px;
+}
+
+.page-header {
+    text-shadow: 10px 5px 15px #808080;
+    font: bold 14px verdana;
+}
+
+#hover-over-me {
+    color: blue;
+    font-size: 14px;
+}
+
+#box {
+    background: black;
+    color: snow;
+    width: 100px;
+    padding: 10px;
+}
+
+#mybox {
+    width: 30px;
+    height: 30px;
+    background: green;
+    color: white;
+}
+
+.dragme {
+    width: 60px;
+    height: 30px;
+    background-color: red;
+    color: white;
+}
+
+.resizeme {
+    width: 60px;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    border: dotted;
+    border-color: white;
+}
+
+.spacing, .label1, .label2, .label3 {
+    width: 150px;
+    height: 30px;
+}
+
+
+    .label1.ui-selected {
+        background: #f6b8b8;
+        color: red;
+    }
+
+    .label2.ui-selected {
+        background: #cded99;
+        color: green;
+    }
+
+    .label3.ui-selected {
+        background: #f1acf2;
+        color: #d505fe;
+    }
+
+.toggler {
+    width: 500px;
+    height: 200px;
+    position: relative;
+}
+
+#button {
+    padding: .5em 1em;
+    text-decoration: none;
+}
+
+#effect {
+    width: 240px;
+    padding: 1em;
+    font-size: 1.2em;
+    border: 1px;
+    background: #f6e6fb;
+    color: #d505fe;
+}
+
+.newClass {
+    text-indent: 40px;
+    letter-spacing: .4em;
+    width: 410px;
+    height: 150px;
+}

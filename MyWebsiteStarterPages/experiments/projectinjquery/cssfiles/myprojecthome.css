@@ -1,0 +1,95 @@
+﻿#homepageheader {
+    width: 80%;
+    background: #efeded;
+    margin: 10px auto;
+    text-align: center;
+    
+}
+
+.block {
+    color:white;
+    background-color:#454545;
+    padding-top:10px;
+    height: 150px;
+    width: 80%; 
+    display: inline-block;
+    margin: 10px;
+}
+
+
+.myhomecircle2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+#homepagebody {
+    padding-left:10px;
+}
+
+#homepagebody1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    width: 500px;
+    padding-right: 20px;
+    float: left;
+    
+}
+
+#homepagebody1 div p {
+    color: #808080;
+    font-size: small;
+}
+
+#homepagebody2 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    float: left;
+}
+
+#homepagefooter {
+    clear: both;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background-color: #efeded;
+    text-align: center;
+}
+
+
+.myhomecircle {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+}
+
+.myhomesquare {
+    width: 150px;
+    height: 150px;
+    border-color: black;
+}
+
+
+
+@media screen and (min-width: 1112px) and (max-width: 1200px) {
+    #homepagebody1 {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1112px) {
+    #homepagebody1 {
+        width: auto;
+    }
+}
+@media screen and (max-width: 900px) {
+    .block {
+        height: 210px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .block {
+        height: 350px;
+    }
+}

@@ -1,0 +1,68 @@
+﻿#googlemap{
+    width:1100px;
+    height:500px;
+    
+}
+
+body{
+    padding:25px;
+}
+
+nav.home .home,
+nav.airports .airports,
+nav.flights .flights,
+nav.routes .routes,
+nav.weather .weather,
+nav.contactus .contactus{
+	background-color:#e35885;
+}
+nav{
+	display:inline-block;
+	margin:10px auto;
+	background-color:#5597b4;
+	border-radius:2px;
+}
+
+nav a{
+	display:inline-block;
+	padding: 18px 30px;
+	color:#fff !important;
+	font-weight:bold;
+	font-size:16px;
+	text-decoration:none;
+	text-transform: uppercase;
+	transition:all 0.25s;
+}
+
+a:hover {
+    color: #FF00FF;
+}
+
+p{
+	font-size:22px;
+	font-weight:bold;
+	color:#7d9098;
+}
+
+p b{
+    background-color:#5597b4;
+    color:#fff
+}
+
+@media screen and (min-width: 920px) and (max-width: 1200px){
+    #googlemap{
+    width:700px;
+    
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 920px){
+    #googlemap{
+    width:400px;
+    
+    }
+
+}
+
+

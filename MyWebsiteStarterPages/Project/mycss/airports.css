@@ -1,0 +1,23 @@
+﻿#googlemap{
+    width:1100px;
+    height:500px;
+    
+}
+
+@media screen and (min-width: 920px) and (max-width: 1200px){
+    #googlemap{
+    width:700px;
+    
+    }
+
+}
+
+@media screen and (min-width: 500px) and (max-width: 920px){
+    #googlemap{
+    width:400px;
+    
+    }
+
+}
+
+

@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Departures</title>
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../jsfiles/departures.js"></script>
+    <link rel="stylesheet" href="../cssfiles/weather.css" />
+</head>
+<body>
+    
+    <h2>Check departures from airport</h2>
+    <div class="container">
+
+        <input id="deptairporttitle" placeholder="Airport IATA code(eg. bos, lax) and hit Enter" autofocus>
+        <span>
+            <button id="deptsearchairport">Search</button>
+        </span>
+
+        <div class="mymaintable" name="mymaintable">
+            <div class="north">
+                <h2>Airport Name: <small><span class="myairportname"></span></small></h2>
+            </div>
+            <div class="newrow1">
+                <div class="west">airlineCode</div>
+                <div class="west">flightNumber</div>
+                <div class="west">remarks</div>
+                <div class="west">Action</div>
+            </div>
+            <div class="newrow1">
+                <div class="west airlineCode"></div>
+                <div class="west flightNumber"></div>
+                <div class="west remarks"></div>
+                <div class="west city"></div>
+                <div class="west currentTime"></div>
+            </div>
+            
+        </div>
+
+    </div>
+    <br />
+</body>
+</html>

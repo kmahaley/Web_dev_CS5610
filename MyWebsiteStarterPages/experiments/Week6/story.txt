@@ -1,0 +1,7 @@
+﻿../../story/whatisnext.htm?../experiments/Week6/      What is Next?
+angularjs_r1.html									   Introduction to AngularJS routing concept
+angularjs_r2.html									   Creating university website simulation using routing
+angularjs_r3.html									   Routing and web APIs with webservices
+angularjs_r4.html									   Few more angular js experiments
+
+

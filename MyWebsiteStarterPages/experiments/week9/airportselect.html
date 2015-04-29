@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>populating select</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--jQuery-->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!--Angular Js-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="JavaScript2.js"></script>
+</head>
+<body class="container" ng-app="a">
+    <div ng-controller="b" >
+        <h2>Populate from "flightstats" API :big list</h2>
+        <span class="input-group-btn">
+            <!--<input ng-model="airporttitle" class="form-control" placeholder="Enter Airport IATA code">-->
+            <button ng-click="getdata()" class="btn btn-danger"><span class="glyphicon glyphicon-search"></span>Get Airport!</button>
+        </span>
+        
+        <select id="airport" class="form-control"></select>
+        <button ng-click="selecteddata()" class="btn btn-warning">Selected!</button>
+        
+        <h1 id="displayselected"></h1>
+    </div>
+</body>
+</html>

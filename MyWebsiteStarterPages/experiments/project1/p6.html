@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Airport</title>
+
+    <!--BootStrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <!--jQuery-->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+
+    <!--Angular Js-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+
+    <!--Google map api-->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=weather"></script>
+    <!--My files-->
+    <script src="../project1_js_css/p6.js"></script>
+    <link rel="stylesheet" href="../project1_js_css/p1.css" />
+</head>
+<body ng-app="app_p1_p6">
+    <div class="container" ng-controller="controller_p1_p6">
+        <h2>Displaying data from Airport API array</h2>
+        <div class="input-group">
+
+            <input ng-model="airporttitle" class="form-control" placeholder="Enter Airport IATA code">
+            <span class="input-group-btn">
+                <button ng-click="searchairport()" class="btn btn-success"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+
+
+        </div>
+        <br />
+
+        <table ng-show="myairport" class="table table-striped">
+            <tr>
+                <th>Country</th>
+                <th>Country Code</th>
+                <th>City</th>
+                <th>City Code</th>
+                <th>Airport name</th>
+                <th>Local Time</th>
+                <th>&nbsp;</th>
+            </tr>
+            <tr tr ng-repeat="m in myairport">
+                <td>{{m.countryName}}</td>
+                <td>{{m.countryCode}}</td>
+                <td>{{m.city}}</td>
+                <td>{{m.cityCode}}</td>
+                <td>{{m.name}}</td>
+                <td>{{m.localTime}}</td>
+                <td><button class=" btn btn-primary" ng-click="getdata(m)">Details</button></td>
+            </tr>
+        </table>
+        <div ng-show="detailsView">
+            <h2>Details : {{detailsView.name}}</h2>
+
+
+            <div id="googlemap"></div>
+
+        </div>
+
+
+        <nav class="{{active}}">
+
+            <!-- When a link in the menu is clicked, we set the active variable -->
+
+            <a href="#" class="home" ng-click="active='home'">Home</a>
+            <a href="#" class="airports" ng-click="active='airports'">Airports</a>
+            <a href="#" class="flights" ng-click="active='flights'">Flights</a>
+            <a href="#" class="routes" ng-click="active='routes'">Routes</a>
+            <a href="#" class="weather" ng-click="active='weather'">Weather</a>
+            <a href="#" class="contactus" ng-click="active='contactus'">Contact</a>
+        </nav>
+
+        <p ng-show="active">You chose <b>{{active}}</b></p>
+        
+        <nav>
+
+            <!-- When a link in the menu is clicked, we set the active variable -->
+
+            <a href="#" class="home">Home</a>
+            <a href="#" class="airports">Airports</a>
+            <a href="#" class="flights">Flights</a>
+            <a href="#" class="routes">Routes</a>
+            <a href="#" class="weather">Weather</a>
+            <a href="#" class="contactus">Contact</a>
+        </nav>
+
+        <h3>Share your experience</h3>
+        
+        <table class="table table-hover">
+            <tr>
+                <th>Experience</th>
+                <th>Action</th>
+            </tr>
+            <tr ng-repeat="comment in comments">
+                <td>{{comment}}</td>
+                <td><button class="btn btn-danger" ng-click="deletecomment(comment)" disabled>remove</button></td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="comment">Write your experience</label>
+                    <textarea id="comment" class="form-control" rows="5" ng-model="newcomment"></textarea>
+                </td>
+                <td>
+                    <button class="btn btn-success" ng-click="addcomment(newcomment)">Share</button>
+                </td>
+            </tr>
+        </table>
+
+           
+            
+
+        <div>
+            <hr />
+            <h4>Source Code:html,javascript and stylesheet</h4>
+            <ul>
+                <li><a href="../../fileview/Default.aspx?~/experiments/project1/p1.html" target="_blank">HTML View Source</a></li>
+                <li><a href="../../fileview/Default.aspx?~/Experiments/project1_js_css/p1.css" target="_blank">CSS View Source</a></li>
+                <li><a href="../../fileview/Default.aspx?~/Experiments/project1_js_css/p1.js" target="_blank">JS View Source</a></li>
+            </ul>
+
+            <h4>Reference Code</h4>
+            <ul>
+                <li>From my experiments</li>
+
+            </ul>
+            <hr />
+            <footer>
+                Northeastern University &copy; Spring 2015, CS5610 Web Dev class
+            </footer>
+        </div>
+</div>
+</body>
+</html>

@@ -1,5 +1,5 @@
 ﻿body{
-    background-color:#edf0f5;
+    
     margin:0;
     padding:0;
     border:0;
@@ -11,12 +11,13 @@ ul.master_navigation {
     text-align: center;
     padding-top: 40px;
     margin:0px;
-
+    
 }
 
 ul.master_navigation li {
     display: inline-block;
     padding: 0 0.5%;
+    
 }
 
 a {
@@ -24,50 +25,82 @@ a {
     font-weight: bold;
     text-decoration: none;
     display: block;
-    font-size: 120%;
+    font-size: 23px;
+    
 }
 
 a:hover {
     color: #79bc64;
 }
-
-#MyExperiments{
-    color:#3a5795;    
-    font-size: 130%;
+a:focus {
+    color: #f8be7e;
 }
 
-#MyExperiments:hover{
+.MyExperiments{
+    color:#3a5795;    
+    font-size: 20px;
+}
+
+.MyExperiments:hover{
+    
     color: #79bc64;
+}
+.MyExperiments:focus{
+    color: #000000;
 }
 .headerclass {
     color:white;
     height:auto;
     height:100px;
     align-self:center;
+    text-align:center;
     background-color:#3a5795;
+    transition: background-color 2s;
 }
 
-.westclass, .mainclass, .eastclass {
+.westclass, .mainclass,.eastclass{
     margin-top:50px;
     float: left;
-    text-align: left;
-    margin-left:50px;
+    margin-bottom:25px;
 }
 
-.footerclass {
-    clear: both;
-    text-align: center;
-    padding: 25px;
+.eastclass{
+    margin-left: 50px; 
+    
 }
 
+.westclass{
+    margin-left:75px;
+    
+}
 
 .mainclass {    
     margin-right: 10px;
-    text-align: left;
+    margin-left: 50px;
+    width:700px
+}
+.current{
+    text-align: center;
+    clear:both;
+   
+    
+}
+
+.footerclass h3{
+    margin:0px;
+    padding:25px;
+}
+
+.footerclass {
+  
+    text-align: center;
+    color:#3a5795;
+    height:100px;
+    
 }
 
 .image_class {
-    border-radius: 50px;
+    border-radius: 75px;
     transition: all 2s;
 }
 
@@ -78,4 +111,62 @@ a:hover {
 
 h1,p {
     margin: 0px;
+}
+
+.contact{
+    float:left;
+    width:40px;
+    height:40px;
+}
+
+#northeastern,.northeasternclass{
+        height:250px;
+        width:100%;
+}
+
+
+@media screen and (min-width: 575px) and (max-width: 1030px) {
+    .headerclass{
+        height:150px;
+    }
+    ul.master_navigation li {
+    padding:5px;
+    
+    }
+    .mainclass{ 
+        width:auto;
+        margin-right:0px;
+    }
+
+}
+
+
+@media screen and (min-width: 360px) and (max-width: 575px) {
+    .headerclass{
+        height:200px;
+    }
+    ul.master_navigation li {
+    padding:5px;
+    
+    }
+    .mainclass{
+        width:auto;
+        margin-right:0px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .headerclass{
+        height:225px;
+    }
+    ul.master_navigation li {
+    padding:5px;
+    
+    }
+    .mainclass{
+        width:auto;
+        margin-right:0px;
+    }
+    
 }

@@ -1,0 +1,35 @@
+﻿
+.item{
+    background: #333;    
+    text-align: center;
+    height: 300px !important;
+}
+.carousel{
+    margin-top: 20px;
+}
+.bs-example{
+	margin: 20px;
+}
+
+.img-circle{
+    width:100px;
+    height:100px;
+}
+
+#display {
+    background: #F9F9F9;
+    border: 1px solid #E1E1E8;
+    margin: 10px 0;
+    padding: 8px;
+}
+.img-responsive{
+    width:300px;
+    height:300px;
+}
+
+.col-lg-3{
+    text-align:center;
+    padding-top:25px;
+}
+
+

@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>sample jQuery 2</title>
+    <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+    <link rel="stylesheet" href="../CSS_Week3 with JS/StyleSheet.css" />
+    <!--java script is included at the bottom-->
+</head>
+<body>
+    <div class="container">
+        <div class="page-header">
+            <h1>Jquery experiments</h1>
+            <h2>Text modification</h2>
+        </div>
+
+        <code>
+            $("h3").remove();
+        </code>
+
+        <div class="page-header">
+            <h2>Changing CSS of h4 tag</h2>
+            
+        </div>
+        <h4>Sample  text whose CSS is changed</h4>
+        <h4></h4>
+        <div class="page-header">
+            <h2>Calling function as parameter</h2>
+        </div>
+        <code>
+            <b>/*code in jQuery which takes function as parameter*/</b>
+            <div>
+                $(func_as_paramerter);
+            </div>
+            <div>
+                function func_as_paramerter()
+                {
+                console.log("successefully passed function as parameter");
+
+                }
+            </div>
+        </code>
+
+        <div class="page-header">
+            <h2>Passing entire function as parameters</h2>
+        </div>
+        <code>
+            $(function () 
+            <div>
+                {
+                console.log("successefully passed entire function as parameter");
+
+                });
+            </div>
+        </code>
+
+        <div class="page-header">
+            <h2>jQuery-Passing entire function as parameters</h2>
+        </div>
+
+        <div id="mybox">click</div>
+
+        <hr />
+        <h4>Source Code</h4>
+        <div>
+            <a href="../../fileview/Default.aspx?~/experiments/Week3/jquery1.html" target="_blank">View Source</a>
+        </div>
+        <div>
+            <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week3 with JS/StyleSheet.css" target="_blank">CSS View Source</a>
+        </div>
+        <div>
+            <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week3 with JS/JavaScript1.js" target="_blank">JS View Source</a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=ZMQD_X0uaE0" target="_blank">References</a>
+        </div>
+        <hr />
+        <footer>
+            Northeastern University &copy; Spring 2015, CS5610 Web Dev class
+        </footer>
+    </div>
+    <script src="../CSS_Week3 with JS/JavaScript1.js"></script>
+</body>
+</html>

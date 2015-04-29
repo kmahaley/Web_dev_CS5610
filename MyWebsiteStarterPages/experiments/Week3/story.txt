@@ -1,0 +1,8 @@
+﻿../../story/whatisnext.htm?../experiments/Week3/      What is Next?
+jquery.html										   Alerts, buttons and on mouse event
+jquery1.html									   Function handling and CSS through jQuery
+jquery2.html									   Text modification using jQuery
+jquery3.html									   Toggle and updating data from backhand
+jquery4.html									   Resizing, sorting and dragging of the content
+
+

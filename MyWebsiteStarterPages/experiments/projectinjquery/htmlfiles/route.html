@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <!--My files-->
+    <script src="jsfiles/route.js"></script>
+    
+</head>
+<body ng-app="routes">
+    <div class="container">
+        <h2>Go through available filghts and airlines</h2>
+        <small>Check what flights and airlines are available between your holiday destinations</small>
+        <div>
+
+            <input id="fromairporttitle" placeholder="Enter source Airport IATA code" autofocus>
+            <input id="toairporttitle" placeholder="Enter destination Airport IATA code">
+            <span>
+                <button id="searchrouteairport">Search</button>
+            </span>
+
+
+        </div>
+        <br />
+
+        <h2 id="waitingclass">Wait for details to be populated</h2>
+
+
+        <div class="mymaintable" name="mymaintable">
+            <div class="north">
+                <h1>Source and Destination airports details</h1>
+            </div>
+            <div class="newrow1">
+                <div class="westrt colorchange"><strong>Source Airport</strong></div>
+                <div class="westrt colorchange"><strong>Destination Airport</strong></div>
+                
+            </div>
+            <div class="newrow1">
+                <div class="westrt"><ul class="srcairport"></ul></div>
+                <div class="westrt"><ul class="destairport"></ul></div>
+            </div>
+            <div class="south">
+                <button id="getairlines">Airlines</button>
+                <button id="getflights">Flights</button>
+            </div>
+        </div>
+        
+
+        <div class="mydetailstable" name="mydetailstable">
+            <div class="north">
+                <h1>List of airlines travelling from <span class="srccityname"></span> to <span class="destcityname"></span></h1>
+            </div>
+            <div class="newrow1">
+                <div>
+                    <table id="getairlinesforroute"></table>
+                </div>
+            </div>
+            <div class="south">
+
+            </div>
+        </div>
+
+        <div class="mycodestable" name="mycodestable">
+
+            <div class="north">
+                <h1>List of flights from <span class="srccityname"></span> to <span class="destcityname"></span> </h1>
+            </div>
+            <div class="newrow1">
+                <table id="getairlinesflightforroute"></table>
+            </div>
+            <div class="south">
+
+            </div>
+
+
+
+        </div>
+
+        
+
+    </div>
+</body>
+</html>

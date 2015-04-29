@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Weather</title>
+    
+    
+    <!--My files-->
+    <script src="jsfiles/weather.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Get weather conditions of the Airport</h2>
+        <sup>plan your travel</sup>
+        <div>
+
+            <input id="weathertitle" placeholder="IATA code and hit Enter eg. bos, lax" autofocus>
+            <span>
+                <button id="searchweatherairport">search</button>
+            </span>
+        </div>
+        <br />
+
+        <h2 id="waitingclass">Wait for details to be populated</h2>
+
+        <div class="mymaintable" name="mymaintable">
+            <div class="north">
+                <h2>Airport Name: <small><span id="myweatherairportname"></span></small></h2>
+            </div>
+            <div class="newrow1">
+                <div class="west colorchange"><strong>Region</strong></div>
+                <div class="west colorchange"><strong>Country</strong></div>
+                <div class="west colorchange"><strong>City</strong></div>
+                <div class="west colorchange"><strong>Airport Name</strong></div>
+                <div class="west colorchange"><strong>Action</strong></div>
+            </div>
+            <div class="newrow1">
+                <div class="west regionName"></div>
+                <div class="west countryName"></div>
+                <div class="west city"></div>
+                <div class="west name"></div>
+                <div class="west">
+                    <button class="getdatabutton" id="getweatherdetailsdata">Weather</button>
+                    <button class="getdatabutton" id="getweathermapdata">My Map</button>
+                </div>
+            </div>
+            <div class="south">
+                
+            </div>
+        </div>
+
+        <div class="getmapdata" name="getmapdata">
+            <div class="north"><h2>Location : <small>Latitude <span class="latitude">
+                </span> Longitude <span class="longitude"></span> </small></h2></div>
+            <div id="googlemap">
+            </div>
+        </div>
+
+        <div class="mydetailstable" name="mydetailstable">
+            <div class="north">
+                <h2>Weather report time is <small><span class="reportTime"></span></small></h2>
+            </div>
+            <div class="newrow1">
+                <div class="west colorchange"><strong>Station</strong></div>
+                <div class="west colorchange"><strong>Temperature(Celcius)</strong></div>
+                <div class="west colorchange"><strong>Pressure(In-hg)</strong></div>
+                <div class="west colorchange"><strong>Dew Point(Celcius)</strong></div>
+                <div class="west colorchange"><strong>Action</strong></div>
+            </div>
+            <div class="newrow1">
+                <div class="west weatherStationIcao"></div>
+                <div class="west temperatureCelsius"></div>
+                <div class="west pressureInchesHg"></div>
+                <div class="west dewPointCelsius"></div>
+                <div class="west">
+                    <button class="getdatabutton" id="getweathercodesdata">more</button>
+                </div>
+            </div>
+            <div class="south">
+                
+            </div>
+        </div>
+
+        <div class="mycodestable" name="mycodestable">
+
+            <div class="north">
+                <h2>Meter Weather Report dated <small><span class="reportTime"></span></small></h2>
+            </div>
+            <div class="newrow1">
+                <div class="west colorchange"><strong>Wind</strong></div>
+                <div class="west colorchange"><strong>Visibility(Miles)</strong></div>
+                <div class="west colorchange"><strong>Weather Conditions</strong></div>
+                <div class="west colorchange"><strong>Sky Conditions</strong></div>
+            </div>
+            <div class="newrow1">
+                <div class="west"><ul id="wind"></ul></div>
+                <div class="west visibility"></div>
+                <div class="west"><ul id="weathercond"></ul></div>
+                <div class="west skycond"></div>
+            </div>
+            <div class="south">
+                
+            </div>
+        </div>
+
+      
+</div>
+</body>
+</html>

@@ -1,0 +1,8 @@
+﻿../../story/whatisnext.htm?../experiments/Week5/      What is Next?
+angularjs1.html									   Introduction to AngularJS concept
+angularjs2.html									   Playing with hardcoded data in array
+angularjs3.html									   Extending hardcoded data to dynamic data feeding
+angularjs4.html									   Various filters of angular js
+angularjs5.html									   Currency calculator and HTML DOM objects
+
+

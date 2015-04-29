@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Angular JS:More experiments and Routing</title>
+
+    <!--BootStrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+    <!--Angular Js-->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <!--Angular Js Routing-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular-route.min.js"></script>
+    <!--My files-->
+    <script src="../CSS_Week6 with JS/angularjs_r3.js"></script>
+    <script src="../CSS_Week6 with JS/webservice1.js"></script>
+    <link rel="stylesheet" href="../CSS_Week6 with JS/StyleSheet.css" />
+
+</head>
+<body ng-app="routing1">
+    <div class="container">
+        <div class="page-header">
+            <h1>Routing with API</h1>
+        </div>
+        <h3>Description:</h3>
+        <p>
+            Used IMDB API to get movies form internet. Created a service to fetch the movie from the net and to save a favorite movie in an array.
+            Data from favorites movies array is dispalyed on favorites page. This routing exp contains three pages search,favorites and details.
+        </p>
+        <p>Links for navigation are give below</p>
+        <div>
+            <nav>
+                <a href="#/search">search</a>
+                <a href="#/favorites">favorites</a>
+            </nav>
+        </div>
+
+        <div ng-view>
+
+        </div>
+        <hr />
+        <h4>Source Code</h4>
+        <div>
+            <a href="../../fileview/Default.aspx?~/experiments/Week6/angularjs_r3.html" target="_blank">View Source of main page</a>
+        </div>
+        <div>
+            <a href="../../fileview/Default.aspx?~/experiments/Week6/routing/search.html" target="_blank">Search page</a>
+            <a href="../../fileview/Default.aspx?~/experiments/Week6/routing/favorites.html" target="_blank">Favorites page</a>
+        </div>
+        <div>
+            <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week6 with JS/StyleSheet.css" target="_blank">CSS View Source</a>
+        </div>
+        <div>
+            <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week6 with JS/angularjs_r3.js" target="_blank">JS View Source</a>
+        </div>
+        <div>
+            <a href="../../fileview/Default.aspx?~/Experiments/CSS_Week6 with JS/webservice1.js" target="_blank">Webservice</a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/watch?v=KCTKd5ZmXMQ" target="_blank">References</a>
+        </div>
+        <hr />
+        <footer>
+            Northeastern University &copy; Spring 2015, CS5610 Web Dev class
+        </footer>
+    </div>
+
+</body>
+</html>

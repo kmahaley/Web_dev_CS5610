@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>flights</title>
+
+
+    <!--My files-->
+    <script src="jsfiles/flight.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <h2>Check your flight records here</h2>
+        <sup>Know your flight before booking</sup>
+        <div>
+            <input id="inputairlinecode" placeholder="Airline Code eg. BA" autofocus>
+            <input id="inputairlinenumber" placeholder="Airline number eg. 198 and hit Enter">
+            <button id="searchflight">Search</button>
+
+        </div>
+        <br />
+
+        <h2 id="waitingclass">Wait for details to be populated</h2>
+
+        <div class="mymaintable" name="mymaintable">
+            <div class="north">
+                <h2>Airline Name and number: <small><span class="myairlinename"></span></small></h2>
+            </div>
+            <div class="newrow1">
+                <div class="west colorchange"><strong>Departure</strong></div>
+                <div class="west colorchange"><strong>Arrival</strong></div>
+                <div class="west colorchange"><strong>Flight No</strong></div>
+                <div class="west colorchange"><strong>Ontime performance</strong></div>
+                <div class="west colorchange"><strong>Action</strong></div>
+            </div>
+            <div class="newrow1">
+                <div class="west departureairport"></div>
+                <div class="west arrivalairport"></div>
+                <div class="west"><span class="airlinecode"></span><span class="flightcode"></span></div>
+                <div class="west ontime"></div>
+                <div class="west">
+                    <button class="getdatabutton" id="flightgetdetailsdata">Details</button>
+                    <button class="getdatabutton" id="flightgetmapdata">My Map</button>
+                </div>
+            </div>
+            <div class="south">
+
+            </div>
+        </div>
+
+        <div class="getmapdata" name="getmapdata">
+            <div class="north">
+                <h2>
+                    Departure location :<small>
+                        <span class="departureairport"></span>
+                        , Latitude <span class="departureairportlat"></span>, Longitude <span class="departureairportlong"></span>
+                    </small>
+                </h2>
+                <h2>
+                    Arrival location :<small>
+                        <span class="arrivalairport"></span>
+                        , Latitude <span class="arrivalairportlat"></span>, Longitude <span class="arrivalairportlong"></span>
+                    </small>
+                </h2>
+            </div>
+            <div id="googlemap">
+            </div>
+        </div>
+
+        <div class="mydetailstable" name="mydetailstable">
+            <div class="north">
+                <h2>More details of flight <small><span class="myairlinename"></span></small></h2>
+            </div>
+            <div class="newrow1">
+                <div class="west colorchange"><strong>Airline</strong></div>
+                <div class="west colorchange"><strong>Departure Airport</strong></div>
+                <div class="west colorchange"><strong>Arrival Airport</strong></div>
+                <div class="west colorchange"><strong>Action</strong></div>
+            </div>
+            <div class="newrow1">
+                <div class="west">
+                    <ul class="givenairline"></ul>
+                </div>
+                <div class="west">
+                    <ul class="departurea"></ul>
+                </div>
+                <div class="west">
+                    <ul class="arrivala"></ul>
+                </div>
+                <div class="west">
+                    <button class="getdatabutton" id="flightgetcodesdata">Delays</button>
+                </div>
+            </div>
+            <div class="south">
+
+            </div>
+        </div>
+
+        <div class="mycodestable" name="mycodestable">
+
+            <div class="north">
+                <h2>Delays details of flight <small><span class="myairlinename"></span></small></h2>
+            </div>
+            <div class="newrow1">
+                <div class="west colorchange"><strong>Delays(mins)</strong></div>
+                <div class="west colorchange"><strong>Min delays(mins)</strong></div>
+                <div class="west colorchange"><strong>Mean delays(mins)</strong></div>
+                <div class="west colorchange"><strong>Cancellation(%)</strong></div>
+            </div>
+            <div class="newrow1">
+                <div class="west maxdelay"></div>
+                <div class="west mindelay"></div>
+                <div class="west meandelay"></div>
+                <div class="west cancellation"></div>
+            </div>
+            <div class="south">
+
+            </div>
+
+        </div>
+
+
+        <br /><br />
+        <div class="displaymycomments">
+            <table id="commentstable"></table>
+            <br /><br />
+            <input id="comment" placeholder="Enter your comment" autofocus>
+            <span>
+                <button id="addcomment">Add</button>
+            </span>
+        </div>
+
+    </div>
+</body>
+</html>

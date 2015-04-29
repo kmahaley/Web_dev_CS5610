@@ -1,0 +1,25 @@
+﻿.west {
+
+    font-size: 30px;
+    text-align: center;
+    height: 100px;
+    vertical-align: middle;
+    display: table-cell;
+    background-color: lightgreen;
+}
+
+.newrow1 {
+    display: table-row;
+    clear: both;
+}
+
+.north, .south {
+    background-color: lightcyan;
+    clear: both;
+}
+
+.container {
+    margin: 20px;
+    
+}
+
