@@ -20,7 +20,7 @@
 
     });
     $("#indexpage8").click(function () {
-        $('#indexmain').load('htmlfiles/arrivals.html');
+        $('#indexmain').load('htmlfiles/weeklyweather.html');
 
     });
     $("#indexpage3").click(function () {

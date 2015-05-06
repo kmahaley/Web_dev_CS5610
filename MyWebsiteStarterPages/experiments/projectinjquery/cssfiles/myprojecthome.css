@@ -93,3 +93,8 @@
         height: 350px;
     }
 }
+@media screen and (max-width: 390px) {
+    .block {
+        height: 450px;
+    }
+}

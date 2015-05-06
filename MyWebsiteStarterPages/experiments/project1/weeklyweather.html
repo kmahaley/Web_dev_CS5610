@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Weekly weather</title>
+    <!--jQuery-->
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <!--Google map api-->
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=weather"></script>
+    <link href="../projectinjquery/cssfiles/weather.css" rel="stylesheet" />
+    <link href="weeklyweather.css" rel="stylesheet" />
+
+    <!--My files-->
+    <script src="weeklyweather.js"></script>
+    <script src="windowsize.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div id="homepageheader">
+
+            <h2 id="weeklyheading">Weekly weather</h2>
+            <div>
+
+                <input id="weeklyweather" placeholder="City name eg.boston, london etc" autofocus>
+                <span>
+                    <button id="searchweeklyweather">search</button>
+                </span>
+                <h2 id="waitingclass">Wait for details to be populated</h2>
+
+            </div>
+            <br />
+            <div class="toappend">
+
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+</body>
+</html>

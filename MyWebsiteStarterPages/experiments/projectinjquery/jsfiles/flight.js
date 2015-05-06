@@ -357,7 +357,7 @@ $(function () {
 
         $("#commentstable").append(ticketHeadersRow);
         $.each(comments, function (index, value) {
-            console.log(value);
+            //console.log(value);
             var tr = "<tr>";
             tr = tr + "<td>" + value + "</td> </tr>";
             $("#commentstable").append(tr);

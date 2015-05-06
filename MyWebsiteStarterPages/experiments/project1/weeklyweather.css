@@ -1,0 +1,52 @@
+﻿
+#waitingclass{
+    color:#3a5795;
+}
+
+#homepageheader {
+    width: 80%;
+    background: #cecece;
+    margin: 10px auto;
+    text-align: center;
+    
+}
+
+.block {
+    color:black;
+    background-color:white;
+    padding-top:10px;
+    height: 150px;
+    width: 80%; 
+    display: inline-block;
+    margin: 10px;
+}
+
+
+.smallimage{
+    width:50px;
+    height:50px;
+}
+button
+{
+    clear:both;
+    background-color: white;
+    color: #454545;
+    height: 25px;
+    width: 100px;
+    text-transform:uppercase;
+    box-shadow:-1px 2px #6E6B6A inset;
+    border-radius:5px;
+    border:0;
+    font-family: Kartika;
+}
+button:hover {
+  color: white;
+  background: #454545;
+  cursor: pointer;
+  
+}
+button:focus {
+  color: #454545;
+  background: #79bc64;
+  
+}
